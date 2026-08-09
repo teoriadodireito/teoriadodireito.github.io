@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Grupo | Teoria do Direito – CNPq/UNISINOS</title>
+    <meta name="description" content="Conheça a história, as linhas de pesquisa e a equipe do Grupo de Pesquisa Teoria do Direito, certificado pelo CNPq e sediado no PPGD da UNISINOS.">
+    <meta name="keywords" content="Teoria do Direito, CNPq, UNISINOS, Leonel Severo Rocha, pesquisa jurídica, Teoria dos Sistemas, Constitucionalismo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fabiowlademir.github.io/teoriadodireito/sobre.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fabiowlademir.github.io/teoriadodireito/sobre.html">
+    <meta property="og:title" content="Sobre o Grupo | Teoria do Direito – CNPq/UNISINOS">
+    <meta property="og:description" content="Conheça a história, as linhas de pesquisa e a equipe do Grupo de Pesquisa Teoria do Direito.">
+    <meta property="og:image" content="https://fabiowlademir.github.io/teoriadodireito/logo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Sobre o Grupo de Pesquisa Teoria do Direito",
+        "description": "Grupo de pesquisa certificado pelo CNPq, sediado no PPGD da UNISINOS, liderado pelo Prof. Dr. Leonel Severo Rocha.",
+        "publisher": {
+            "@type": "ResearchOrganization",
+            "name": "Grupo de Pesquisa Teoria do Direito",
+            "url": "https://fabiowlademir.github.io/teoriadodireito/"
+        }
+    }
+    </script>
+
+    <style>
+        /* ===== MESMOS ESTILOS DO PORTAL PRINCIPAL ===== */
+        :root {
+            --rosa: #E83F6F;
+            --verde: #2DAA7E;
+            --azul: #2C7DA0;
+            --amarelo: #F9C74F;
+            --preto: #1F2937;
+            --cinza-claro: #f0f2f5;
+            --cinza-azulado: #e8ecf1;
+            --cinza-borda: #dce1e8;
+            --branco: #ffffff;
+            --texto-corpo: #2d3748;
+            --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.04);
+            --sombra-media: 0 12px 40px rgba(0, 0, 0, 0.08);
+            --fonte-principal: 'Inter', sans-serif;
+            --fonte-titulos: 'Cormorant Garamond', serif;
+            --transicao-padrao: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --border-radius: 28px;
+            --bg-body: #f5f7fa;
+        }
+
+        [data-theme="dark"] {
+            --branco: #1a202c;
+            --cinza-claro: #2d3748;
+            --cinza-azulado: #2a313a;
+            --cinza-borda: #4a5568;
+            --texto-corpo: #e2e8f0;
+            --preto: #f7fafc;
+            --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.3);
+            --sombra-media: 0 12px 40px rgba(0, 0, 0, 0.5);
+            --bg-body: #141a24;
+        }
+
+        [data-high-contrast="true"] {
+            --rosa: #b91c1c;
+            --verde: #065f46;
+            --azul: #1a365d;
+            --amarelo: #d69e2e;
+            --preto: #000000;
+            --branco: #ffffff;
+            --cinza-claro: #f3f4f6;
+            --cinza-azulado: #e5e7eb;
+            --texto-corpo: #000000;
+            --cinza-borda: #000000;
+            --bg-body: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--fonte-principal);
+            background-color: var(--bg-body);
+            color: var(--texto-corpo);
+            line-height: 1.8;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        a { color: var(--azul); text-decoration: none; transition: var(--transicao-padrao); }
+        a:hover, a:focus-visible { color: var(--rosa); text-decoration: underline; }
+        :focus-visible { outline: 3px solid var(--azul); outline-offset: 2px; border-radius: 4px; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+        .skip-to-content {
+            position: absolute; top: -100%; left: 50%; transform: translateX(-50%);
+            background: var(--preto); color: var(--branco); padding: 12px 24px;
+            border-radius: 0 0 8px 8px; z-index: 10000; font-weight: 600;
+            transition: top 0.2s ease;
+        }
+        .skip-to-content:focus { top: 0; text-decoration: none; color: var(--branco); }
+
+        /* HEADER */
+        .site-header {
+            background: var(--branco);
+            position: sticky; top: 0; z-index: 1000;
+            border-bottom: 4px solid transparent;
+            border-image: linear-gradient(90deg, var(--rosa), var(--verde), var(--amarelo), var(--azul)) 1;
+            transition: background 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 12px 0; flex-wrap: wrap; gap: 12px;
+        }
+        .logo-container { display: flex; align-items: center; gap: 16px; }
+        .logo-img {
+            height: 52px; width: auto; border-radius: 12px;
+            transition: var(--transicao-padrao);
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
+        }
+        .logo-img:hover {
+            transform: scale(1.04) rotate(-1deg);
+            filter: drop-shadow(0 4px 16px rgba(232, 63, 111, 0.25));
+        }
+        .logo-text {
+            font-family: var(--fonte-titulos);
+            font-size: 1.5rem; font-weight: 700; color: var(--preto);
+            letter-spacing: -0.5px;
+        }
+        .logo-text a { color: var(--preto); text-decoration: none; }
+        .logo-text a:hover { color: var(--rosa); text-decoration: none; }
+
+        .nav-links {
+            display: flex; gap: 24px; list-style: none;
+            align-items: center; flex-wrap: wrap;
+        }
+        .nav-links a {
+            text-decoration: none; color: var(--texto-corpo);
+            font-weight: 500; font-size: 0.9rem; padding: 4px 0;
+            border-bottom: 2px solid transparent;
+            transition: var(--transicao-padrao); position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -2px; left: 0;
+            width: 0; height: 2px; background: var(--rosa);
+            transition: var(--transicao-padrao);
+        }
+        .nav-links a:hover::after, .nav-links a:focus-visible::after { width: 100%; }
+        .nav-links a:hover, .nav-links a:focus-visible { color: var(--rosa); text-decoration: none; }
+        .nav-links .active { color: var(--rosa); }
+        .nav-links .active::after { width: 100%; }
+
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--texto-corpo); padding: 4px 8px; }
+
+        /* BREADCRUMB */
+        .breadcrumb {
+            font-size: 0.85rem; padding: 16px 0;
+            color: var(--texto-corpo); opacity: 0.7;
+        }
+        .breadcrumb a { color: var(--azul); }
+        .breadcrumb span { margin: 0 6px; }
+
+        /* CONTEÚDO */
+        .page-content { padding: 60px 0 80px; }
+        .page-content h1 {
+            font-family: var(--fonte-titulos); font-size: 2.8rem;
+            margin-bottom: 8px; color: var(--preto);
+        }
+        .page-content .subtitle {
+            font-size: 1.1rem; color: var(--texto-corpo); opacity: 0.7;
+            margin-bottom: 40px; border-bottom: 1px solid var(--cinza-borda);
+            padding-bottom: 20px;
+        }
+        .page-content h2 {
+            font-family: var(--fonte-titulos); font-size: 1.8rem;
+            margin-top: 40px; margin-bottom: 16px; color: var(--preto);
+        }
+        .page-content h3 {
+            font-family: var(--fonte-titulos); font-size: 1.4rem;
+            margin-top: 28px; margin-bottom: 12px; color: var(--preto);
+        }
+        .page-content p { margin-bottom: 16px; }
+        .page-content ul { margin: 12px 0 20px 24px; }
+        .page-content ul li { margin-bottom: 8px; }
+
+        .highlight-box {
+            background: var(--cinza-claro);
+            border-left: 4px solid var(--rosa);
+            padding: 20px 24px; border-radius: 12px; margin: 24px 0;
+        }
+        .highlight-box strong { color: var(--rosa); }
+
+        .grid-sobre {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+            margin-top: 32px;
+        }
+        .card-sobre {
+            background: var(--branco); padding: 32px;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--cinza-borda);
+            box-shadow: var(--sombra-suave);
+            transition: var(--transicao-padrao);
+        }
+        .card-sobre:hover {
+            transform: translateY(-4px);
+            border-color: var(--rosa);
+            box-shadow: var(--sombra-media);
+        }
+        .card-sobre h3 {
+            font-family: var(--fonte-titulos); font-size: 1.4rem;
+            margin-bottom: 12px; color: var(--preto);
+        }
+        .card-sobre .icon {
+            font-size: 2rem; color: var(--rosa); margin-bottom: 12px;
+            display: block;
+        }
+
+        .btn-voltar {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--azul); color: var(--branco);
+            padding: 10px 24px; border-radius: 30px;
+            font-weight: 600; font-size: 0.9rem;
+            transition: var(--transicao-padrao); margin-top: 24px;
+        }
+        .btn-voltar:hover {
+            background: var(--rosa); color: var(--branco);
+            transform: translateY(-2px); text-decoration: none;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1a2a36; color: #cddfe7;
+            padding: 48px 0 24px; margin-top: 40px;
+        }
+        [data-theme="dark"] footer { background: #0d1b2a; }
+        .footer-grid {
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px; margin-bottom: 32px;
+        }
+        .footer-grid h4 {
+            color: var(--branco); font-family: var(--fonte-titulos);
+            font-size: 1.2rem; margin-bottom: 16px;
+        }
+        .footer-grid ul { list-style: none; }
+        .footer-grid ul li { margin-bottom: 8px; }
+        .footer-grid ul a {
+            color: #cddfe7; text-decoration: none; font-size: 0.9rem;
+            transition: var(--transicao-padrao);
+        }
+        .footer-grid ul a:hover, .footer-grid ul a:focus-visible {
+            color: var(--amarelo); text-decoration: underline;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            display: flex; justify-content: space-between; flex-wrap: wrap;
+            gap: 12px; font-size: 0.85rem;
+        }
+        .footer-bottom a { color: #cddfe7; transition: var(--transicao-padrao); }
+        .footer-bottom a:hover { color: var(--amarelo); }
+        .footer-logo-small { height: 32px; width: auto; border-radius: 8px; opacity: 0.8; }
+
+        /* TOOLBAR ACESSIBILIDADE */
+        .accessibility-toolbar {
+            position: fixed; bottom: 24px; left: 24px; z-index: 9999;
+            display: flex; flex-direction: column; gap: 8px;
+            background: var(--branco); padding: 12px;
+            border-radius: 20px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+            border: 1px solid var(--cinza-borda);
+            transition: var(--transicao-padrao);
+            max-height: 80vh; overflow-y: auto; max-width: 220px;
+        }
+        .accessibility-toolbar button {
+            background: none; border: none; font-size: 1.2rem;
+            padding: 8px 12px; border-radius: 10px; cursor: pointer;
+            color: var(--texto-corpo); transition: var(--transicao-padrao);
+            display: flex; align-items: center; gap: 10px;
+            font-family: var(--fonte-principal); font-size: 0.9rem;
+            min-width: 44px; min-height: 44px; justify-content: flex-start;
+            width: 100%;
+        }
+        .accessibility-toolbar button:hover,
+        .accessibility-toolbar button:focus-visible {
+            background: var(--cinza-claro); color: var(--rosa);
+        }
+        .toolbar-toggle {
+            background: var(--rosa) !important;
+            color: var(--branco) !important;
+            border-radius: 50% !important;
+            width: 52px !important; height: 52px !important;
+            font-size: 1.8rem !important;
+            justify-content: center !important;
+            box-shadow: 0 4px 16px rgba(232, 63, 111, 0.4);
+            flex-shrink: 0;
+        }
+        .toolbar-toggle:hover { transform: scale(1.05); background: var(--rosa) !important; }
+        .toolbar-content { display: none; flex-direction: column; gap: 2px; }
+        .toolbar-content.open { display: flex; }
+        .toolbar-label {
+            font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.8px; color: var(--texto-corpo); opacity: 0.6;
+            padding: 6px 8px 2px; border-top: 1px solid var(--cinza-borda);
+            margin-top: 4px;
+        }
+        .toolbar-label:first-of-type { border-top: none; margin-top: 0; }
+
+        .vlibras-container {
+            position: fixed; bottom: 24px; right: 24px; z-index: 9998;
+        }
+
+        .dyslexic-font { font-family: 'OpenDyslexic', 'Comic Sans MS', 'Inter', sans-serif !important; }
+        .reduce-motion *,
+        .reduce-motion *::before,
+        .reduce-motion *::after {
+            animation-duration: 0.001s !important;
+            transition-duration: 0.001s !important;
+        }
+
+        @media (max-width: 880px) {
+            .grid-sobre { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+            .nav-links {
+                display: none; flex-direction: column; width: 100%;
+                gap: 12px; padding: 16px 0;
+                border-top: 1px solid var(--cinza-borda);
+            }
+            .nav-links.open { display: flex; }
+            .header-inner { position: relative; }
+            .menu-toggle { display: block !important; }
+            .accessibility-toolbar { left: 12px; bottom: 12px; padding: 10px; max-width: 190px; }
+            .accessibility-toolbar button { font-size: 1rem; padding: 6px 10px; min-width: 36px; min-height: 36px; gap: 6px; }
+            .toolbar-toggle { width: 44px !important; height: 44px !important; font-size: 1.4rem !important; }
+            .vlibras-container { bottom: 80px; right: 12px; }
+            .page-content h1 { font-size: 2.2rem; }
+        }
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .page-content { padding: 40px 0 60px; }
+            .logo-text { font-size: 1.1rem; }
+            .logo-img { height: 40px; }
+        }
+        .vlibras-container [vw-access-button] { width: 52px !important; height: 52px !important; }
+    </style>
+</head>
+<body>
+
+    <a class="skip-to-content" href="#main-content">Pular para o conteúdo principal</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="logo-container">
+                <img src="https://fabiowlademir.github.io/teoriadodireito/logo.jpg" alt="Logo do Grupo de Pesquisa Teoria do Direito" class="logo-img" loading="lazy">
+                <div class="logo-text">
+                    <a href="index.html" aria-label="Teoria do Direito - Página inicial">TEORIA DO DIREITO</a>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links" id="navLinks" role="list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html" class="active">Sobre</a></li>
+                    <li><a href="index.html#membros">Membros</a></li>
+                    <li><a href="artigos.html">Artigos</a></li>
+                    <li><a href="index.html#noticias">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="politica-privacidade.html">Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" aria-label="Migalhas de pão">
+        <nav class="breadcrumb">
+            <a href="index.html">Início</a>
+            <span>/</span>
+            <span>Sobre</span>
+        </nav>
+    </div>
+
+    <main id="main-content" class="page-content">
+        <div class="container">
+            <h1>Sobre o Grupo de Pesquisa</h1>
+            <p class="subtitle">Conheça a história, as linhas de pesquisa e a equipe que faz do <strong>Teoria do Direito</strong> um grupo de referência.</p>
+
+            <div class="highlight-box">
+                <p><strong>📌 Certificação CNPq:</strong> Grupo registrado e certificado pelo CNPq desde 2001, com produção acadêmica de alto impacto e atuação em redes internacionais de pesquisa.</p>
+            </div>
+
+            <div class="grid-sobre">
+                <div class="card-sobre">
+                    <span class="icon"><i class="fas fa-history"></i></span>
+                    <h3>Nossa História</h3>
+                    <p>Fundado em <strong>2001</strong>, o Grupo de Pesquisa Teoria do Direito é sediado no <strong>Programa de Pós-Graduação em Direito (PPGD) da UNISINOS</strong>, um dos mais conceituados do Brasil (Capes 6).</p>
+                    <p>Ao longo de mais de duas décadas, o grupo formou centenas de pesquisadores, orientou mais de <strong>200 dissertações e teses</strong> e consolidou uma produção acadêmica de impacto nacional e internacional.</p>
+                    <p>Em <strong>2026</strong>, celebramos <strong>25 anos</strong> de pesquisa ininterrupta, com um evento internacional que reunirá gerações de pesquisadores.</p>
+                </div>
+
+                <div class="card-sobre">
+                    <span class="icon"><i class="fas fa-bullseye"></i></span>
+                    <h3>Missão e Objetivos</h3>
+                    <p>O Grupo tem como missão promover a <strong>pesquisa crítica e inovadora</strong> em Teoria do Direito, articulando Filosofia do Direito, Teoria dos Sistemas Sociais, Hermenêutica e Sociologia Jurídica.</p>
+                    <p>Nossos principais objetivos são:</p>
+                    <ul>
+                        <li>Analisar a complexidade das decisões judiciais nas democracias latino-americanas.</li>
+                        <li>Desenvolver pesquisas sobre Constitucionalismo, direitos fundamentais e democracia.</li>
+                        <li>Fomentar o diálogo interdisciplinar entre Direito, Sociologia e Filosofia.</li>
+                        <li>Formar pesquisadores comprometidos com a excelência acadêmica e a transformação social.</li>
+                    </ul>
+                </div>
+
+                <div class="card-sobre">
+                    <span class="icon"><i class="fas fa-network-wired"></i></span>
+                    <h3>Linhas de Pesquisa</h3>
+                    <ul>
+                        <li><strong>Teoria do Direito e Diferenciação Social na América Latina</strong></li>
+                        <li><strong>Constitucionalismo Intersistêmico</strong> – Constituição e direitos fundamentais entre Teoria Constitucional e Sociologia Jurídica</li>
+                        <li><strong>Direito em Luis Alberto Warat</strong> – análise dos limites e possibilidades de uma epistemologia jurídica da alteridade no Brasil contemporâneo</li>
+                        <li><strong>Sistemas Sociais, Desigualdades e Decisão</strong></li>
+                        <li><strong>Sociedade, Novos Direitos e Transnacionalização</strong></li>
+                    </ul>
+                </div>
+
+                <div class="card-sobre">
+                    <span class="icon"><i class="fas fa-globe-americas"></i></span>
+                    <h3>Redes e Parcerias</h3>
+                    <p>O Grupo mantém parcerias com instituições nacionais e internacionais:</p>
+                    <ul>
+                        <li><strong>Associação Brasileira de Pesquisadores em Sociologia do Direito (ABRASD)</strong></li>
+                        <li><strong>CONPEDI</strong> – Conselho Nacional de Pesquisa e Pós-Graduação em Direito</li>
+                        <li><strong>RED Latinoamericana de Sistemas Sociales y Complejidad (RELASSC)</strong></li>
+                        <li><strong>Rede Law and Social Systems</strong></li>
+                        <li><strong>Universidade Paris 1 Panthéon-Sorbonne</strong> (projeto CAPES/COFECUB)</li>
+                        <li><strong>Universidade Federal de Mato Grosso (UFMT)</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 48px;">Coordenação</h2>
+            <div class="grid-sobre" style="grid-template-columns: 1fr 1fr;">
+                <div class="card-sobre">
+                    <h3>Prof. Dr. Leonel Severo Rocha</h3>
+                    <p><strong>Líder do Grupo</strong></p>
+                    <p>Possui graduação em Ciências Jurídicas e Sociais pela Universidade Federal de Santa Maria (1979), Mestrado em Direito pela UFSC (1982), Doutorado pela École des Hautes Études en Sciences Sociales de Paris (1989) e Pós-doutorado pela Universita degli Studi di Lecce.</p>
+                    <p>É <strong>Professor Titular da UNISINOS</strong>, Professor Visitante da Faculté de Droit da Universidade de Paris 1 e <strong>Pesquisador CNPq (nível A1b)</strong>.</p>
+                    <p style="margin-top: 12px;">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:leonel@unisinos.br">leonel@unisinos.br</a><br>
+                        <i class="fas fa-phone" aria-hidden="true"></i> (51) 3590-8148<br>
+                        <i class="fab fa-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0002-6971-1412" target="_blank">ORCID</a> ·
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=_TacRmIAAAAJ" target="_blank">Google Acadêmico</a>
+                    </p>
+                </div>
+                <div class="card-sobre" style="background: linear-gradient(135deg, var(--amarelo), #f6ad55); border-color: var(--amarelo);">
+                    <h3>🎉 25 anos do Grupo!</h3>
+                    <p><strong>22 de setembro de 2026</strong></p>
+                    <p>Auditório Papa Francisco · UNISINOS</p>
+                    <p style="margin-top: 12px;">
+                        <a href="https://eventos.unisinos.br/encontro25anosteoriadireito/" target="_blank" style="color: var(--preto); font-weight: 600; text-decoration: underline;">
+                            Inscreva-se e participe →
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--cinza-borda);">
+                <a href="index.html" class="btn-voltar"><i class="fas fa-arrow-left" aria-hidden="true"></i> Voltar para o início</a>
+                <a href="artigos.html" class="btn-voltar" style="margin-left: 12px; background: var(--rosa);"><i class="fas fa-book-open" aria-hidden="true"></i> Ver artigos</a>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Teoria do Direito</h4>
+                    <img src="https://fabiowlademir.github.io/teoriadodireito/logo.jpg" alt="Logo Teoria do Direito" class="footer-logo-small" loading="lazy">
+                    <p style="margin-top: 8px;">Grupo de Pesquisa certificado pelo CNPq · PPGD UNISINOS</p>
+                    <p style="margin-top: 4px; font-size: 0.9rem;">© 2026 Todos os direitos reservados.</p>
+                    <div style="display: flex; gap: 16px; margin-top: 12px;">
+                        <a href="https://www.instagram.com/theoriadodireito/" target="_blank" rel="noopener" style="color: #cddfe7; font-size: 1.4rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@fabiowlademirrs" target="_blank" rel="noopener" style="color: #cddfe7; font-size: 1.4rem;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="index.html#membros">Membros</a></li>
+                        <li><a href="artigos.html">Artigos</a></li>
+                        <li><a href="index.html#noticias">Notícias</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Áreas de Pesquisa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Teoria dos Sistemas</a></li>
+                        <li><a href="sobre.html">Constitucionalismo</a></li>
+                        <li><a href="sobre.html">Hermenêutica</a></li>
+                        <li><a href="sobre.html">Sociologia Jurídica</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="politica-privacidade.html" style="color: var(--amarelo);">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Mapa do Site</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div><span>Desenvolvido em conformidade com <strong>WCAG 2.2</strong>, <strong>eMAG</strong> e <strong>LBI</strong>.</span></div>
+                <div><i class="fas fa-shield-alt" aria-hidden="true" style="color: var(--verde);"></i> LGPD · Dados protegidos</div>
+                <div>
+                    <span style="display: block;">Design & Desenvolvimento: <strong>Fábio Wlademir</strong></span>
+                    <div style="display: flex; gap: 12px; margin-top: 4px; justify-content: flex-end;">
+                        <a href="https://fabiowlademir.github.io/" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fas fa-globe"></i></a>
+                        <a href="https://wa.me/5551998883187" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/fabiowlademir/" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@fabiowlademirrs" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/fabiowlademirrs" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOOLBAR ACESSIBILIDADE -->
+    <div class="accessibility-toolbar" role="toolbar" aria-label="Ferramentas de acessibilidade">
+        <button class="toolbar-toggle" id="toolbarToggle" aria-expanded="false" aria-label="Abrir ferramentas de acessibilidade">♿</button>
+        <div class="toolbar-content" id="toolbarContent">
+            <span class="toolbar-label">Tema</span>
+            <button data-action="theme" data-value="light" aria-label="Modo claro"><i class="fas fa-sun" aria-hidden="true"></i> Claro</button>
+            <button data-action="theme" data-value="dark" aria-label="Modo escuro"><i class="fas fa-moon" aria-hidden="true"></i> Escuro</button>
+            <span class="toolbar-label">Contraste</span>
+            <button data-action="contrast" data-value="normal" aria-label="Contraste normal"><i class="fas fa-adjust" aria-hidden="true"></i> Normal</button>
+            <button data-action="contrast" data-value="high" aria-label="Alto contraste"><i class="fas fa-circle-half-stroke" aria-hidden="true"></i> Alto</button>
+            <span class="toolbar-label">Fonte</span>
+            <button data-action="fontSize" data-value="small" aria-label="Diminuir fonte">A-</button>
+            <button data-action="fontSize" data-value="medium" aria-label="Fonte padrão">A</button>
+            <button data-action="fontSize" data-value="large" aria-label="Aumentar fonte">A+</button>
+            <button data-action="fontSize" data-value="xlarge" aria-label="Fonte extra grande">A++</button>
+            <span class="toolbar-label">Leitura</span>
+            <button data-action="dyslexic" data-value="on" aria-label="Fonte para dislexia"><i class="fas fa-book-open" aria-hidden="true"></i> Dislexia</button>
+            <button data-action="reduceMotion" data-value="on" aria-label="Reduzir animações"><i class="fas fa-person-walking" aria-hidden="true"></i> Reduzir</button>
+            <span class="toolbar-label">Voz</span>
+            <button id="voiceBtn" aria-label="Ativar comando de voz"><i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz</button>
+            <span class="toolbar-label">Áudio</span>
+            <button id="listenBtn" aria-label="Ouvir página"><i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir</button>
+        </div>
+    </div>
+
+    <div class="vlibras-container">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+
+            // Menu Mobile
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', function() {
+                    const isOpen = navLinks.classList.toggle('open');
+                    this.setAttribute('aria-expanded', isOpen);
+                    this.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+                });
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                    });
+                });
+            }
+
+            // Toolbar
+            const toolbarToggle = document.getElementById('toolbarToggle');
+            const toolbarContent = document.getElementById('toolbarContent');
+            let toolbarOpen = false;
+            if (toolbarToggle && toolbarContent) {
+                toolbarToggle.addEventListener('click', function() {
+                    toolbarOpen = !toolbarOpen;
+                    toolbarContent.classList.toggle('open', toolbarOpen);
+                    this.setAttribute('aria-expanded', toolbarOpen);
+                    this.textContent = toolbarOpen ? '✕' : '♿';
+                });
+                document.addEventListener('click', function(e) {
+                    const toolbar = document.querySelector('.accessibility-toolbar');
+                    if (toolbar && !toolbar.contains(e.target) && toolbarOpen) {
+                        toolbarOpen = false;
+                        toolbarContent.classList.remove('open');
+                        toolbarToggle.setAttribute('aria-expanded', 'false');
+                        toolbarToggle.textContent = '♿';
+                    }
+                });
+            }
+
+            // Ações
+            const actions = {
+                theme: (v) => { document.documentElement.setAttribute('data-theme', v); localStorage.setItem('theme', v); },
+                contrast: (v) => { document.documentElement.setAttribute('data-high-contrast', v === 'high' ? 'true' : 'false'); localStorage.setItem('highContrast', v === 'high' ? 'true' : 'false'); },
+                fontSize: (v) => {
+                    const sizes = { small: '0.85rem', medium: '1rem', large: '1.2rem', xlarge: '1.4rem' };
+                    document.documentElement.style.fontSize = sizes[v] || '1rem';
+                    localStorage.setItem('fontSize', v);
+                },
+                dyslexic: (v) => { document.body.classList.toggle('dyslexic-font', v === 'on'); localStorage.setItem('dyslexic', v === 'on' ? 'true' : 'false'); },
+                reduceMotion: (v) => { document.body.classList.toggle('reduce-motion', v === 'on'); localStorage.setItem('reduceMotion', v === 'on' ? 'true' : 'false'); }
+            };
+            document.querySelectorAll('[data-action]').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const action = this.dataset.action;
+                    const value = this.dataset.value;
+                    if (actions[action]) actions[action](value);
+                });
+            });
+
+            // Restaurar preferências
+            function restorePreferences() {
+                const theme = localStorage.getItem('theme');
+                if (theme) document.documentElement.setAttribute('data-theme', theme);
+                const contrast = localStorage.getItem('highContrast');
+                if (contrast) document.documentElement.setAttribute('data-high-contrast', contrast);
+                const fontSize = localStorage.getItem('fontSize');
+                if (fontSize) {
+                    const sizes = { small: '0.85rem', medium: '1rem', large: '1.2rem', xlarge: '1.4rem' };
+                    document.documentElement.style.fontSize = sizes[fontSize] || '1rem';
+                }
+                if (localStorage.getItem('dyslexic') === 'true') document.body.classList.add('dyslexic-font');
+                if (localStorage.getItem('reduceMotion') === 'true') document.body.classList.add('reduce-motion');
+            }
+            restorePreferences();
+
+            // VLibras
+            const vlibrasScript = document.createElement('script');
+            vlibrasScript.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
+            vlibrasScript.async = true;
+            vlibrasScript.onload = function() { new window.VLibras.Widget('https://vlibras.gov.br/app'); };
+            document.body.appendChild(vlibrasScript);
+
+            // Voice Command
+            const voiceBtn = document.getElementById('voiceBtn');
+            let isListening = false;
+            let recognition = null;
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                recognition = new SpeechRecognition();
+                recognition.lang = 'pt-BR';
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                document.addEventListener('keydown', function(e) {
+                    if (e.ctrlKey && e.shiftKey && e.key === 'V') { e.preventDefault();
+                        toggleVoiceRecognition(); }
+                });
+                if (voiceBtn) voiceBtn.addEventListener('click', toggleVoiceRecognition);
+
+                function toggleVoiceRecognition() {
+                    if (!recognition) return;
+                    if (isListening) { recognition.stop();
+                        isListening = false; if (voiceBtn) { voiceBtn.innerHTML =
+                                '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                            voiceBtn.style.background = 'transparent';
+                            voiceBtn.style.color = ''; } return; }
+                    try {
+                        recognition.start();
+                        isListening = true;
+                        if (voiceBtn) { voiceBtn.innerHTML =
+                                '<i class="fas fa-microphone-slash" aria-hidden="true"></i> Parar';
+                            voiceBtn.style.background = 'var(--rosa)';
+                            voiceBtn.style.color = 'white'; }
+                    } catch (e) { console.warn(e);
+                        isListening = false; }
+                }
+                recognition.onresult = function(event) {
+                    const command = event.results[0][0].transcript.toLowerCase().trim();
+                    const commands = {
+                        'início': () => window.location.href = 'index.html',
+                        'sobre': () => window.location.href = 'sobre.html',
+                        'artigos': () => window.location.href = 'artigos.html',
+                        'contato': () => window.location.href = 'contato.html',
+                        'privacidade': () => window.location.href = 'politica-privacidade.html',
+                        'modo escuro': () => actions.theme('dark'),
+                        'modo claro': () => actions.theme('light'),
+                        'aumentar fonte': () => actions.fontSize('large'),
+                        'diminuir fonte': () => actions.fontSize('small'),
+                    };
+                    for (const [key, action] of Object.entries(commands)) {
+                        if (command.includes(key)) {
+                            action();
+                            recognition.stop();
+                            isListening = false;
+                            if (voiceBtn) { voiceBtn.innerHTML =
+                                    '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                                voiceBtn.style.background = 'transparent';
+                                voiceBtn.style.color = ''; }
+                            break;
+                        }
+                    }
+                };
+                recognition.onerror = function() { isListening = false; if (voiceBtn) { voiceBtn.innerHTML =
+                            '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                        voiceBtn.style.background = 'transparent';
+                        voiceBtn.style.color = ''; } };
+                recognition.onend = function() { isListening = false; if (voiceBtn) { voiceBtn.innerHTML =
+                            '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                        voiceBtn.style.background = 'transparent';
+                        voiceBtn.style.color = ''; } };
+            } else { if (voiceBtn) { voiceBtn.style.opacity = '0.5';
+                    voiceBtn.title = 'Reconhecimento de voz não suportado'; } }
+
+            // Ouvir página
+            const listenBtn = document.getElementById('listenBtn');
+            let isSpeaking = false;
+            let speechSynth = window.speechSynthesis;
+            if (listenBtn && speechSynth) {
+                listenBtn.addEventListener('click', function() {
+                    if (isSpeaking) { speechSynth.cancel();
+                        isSpeaking = false; listenBtn.innerHTML =
+                            '<i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir';
+                        listenBtn.style.background = 'transparent';
+                        listenBtn.style.color = ''; return; }
+                    const mainContent = document.getElementById('main-content');
+                    const text = mainContent ? mainContent.innerText : document.body.innerText;
+                    const cleanText = text.replace(/\s+/g, ' ').replace(/©.*$/s, '').trim();
+                    const utterance = new SpeechSynthesisUtterance(cleanText);
+                    utterance.lang = 'pt-BR';
+                    utterance.rate = 0.9;
+                    utterance.pitch = 1;
+                    utterance.onend = function() { isSpeaking = false;
+                        listenBtn.innerHTML = '<i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir';
+                        listenBtn.style.background = 'transparent';
+                        listenBtn.style.color = ''; };
+                    utterance.onerror = function() { isSpeaking = false;
+                        listenBtn.innerHTML = '<i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir';
+                        listenBtn.style.background = 'transparent';
+                        listenBtn.style.color = ''; };
+                    speechSynth.speak(utterance);
+                    isSpeaking = true;
+                    listenBtn.innerHTML = '<i class="fas fa-stop" aria-hidden="true"></i> Parar';
+                    listenBtn.style.background = 'var(--rosa)';
+                    listenBtn.style.color = 'white';
+                });
+            }
+
+            console.log('📄 Página Sobre carregada com sucesso!');
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | Teoria do Direito</title>
+    <meta name="description" content="Política de Privacidade do Grupo de Pesquisa Teoria do Direito - CNPq/UNISINOS. Conheça seus direitos e como tratamos seus dados pessoais em conformidade com a LGPD.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fabiowlademir.github.io/teoriadodireito/politica-privacidade.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fabiowlademir.github.io/teoriadodireito/politica-privacidade.html">
+    <meta property="og:title" content="Política de Privacidade | Teoria do Direito">
+    <meta property="og:description" content="Política de Privacidade do Grupo de Pesquisa Teoria do Direito em conformidade com a LGPD.">
+    <meta property="og:image" content="https://fabiowlademir.github.io/teoriadodireito/logo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Schema.org para Política de Privacidade -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Política de Privacidade",
+        "description": "Política de Privacidade do Grupo de Pesquisa Teoria do Direito em conformidade com a LGPD.",
+        "publisher": {
+            "@type": "ResearchOrganization",
+            "name": "Grupo de Pesquisa Teoria do Direito",
+            "url": "https://fabiowlademir.github.io/teoriadodireito/"
+        }
+    }
+    </script>
+
+    <style>
+        /* ============================================
+                   CSS CUSTOM PROPERTIES
+                   ============================================ */
+        :root {
+            --rosa: #E83F6F;
+            --verde: #2DAA7E;
+            --azul: #2C7DA0;
+            --amarelo: #F9C74F;
+            --preto: #1F2937;
+            --cinza-claro: #f0f2f5;
+            --cinza-azulado: #e8ecf1;
+            --cinza-borda: #dce1e8;
+            --branco: #ffffff;
+            --texto-corpo: #2d3748;
+            --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.04);
+            --sombra-media: 0 12px 40px rgba(0, 0, 0, 0.08);
+            --fonte-principal: 'Inter', sans-serif;
+            --fonte-titulos: 'Cormorant Garamond', serif;
+            --transicao-padrao: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --border-radius: 28px;
+            --bg-body: #f5f7fa;
+        }
+
+        [data-theme="dark"] {
+            --branco: #1a202c;
+            --cinza-claro: #2d3748;
+            --cinza-azulado: #2a313a;
+            --cinza-borda: #4a5568;
+            --texto-corpo: #e2e8f0;
+            --preto: #f7fafc;
+            --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.3);
+            --sombra-media: 0 12px 40px rgba(0, 0, 0, 0.5);
+            --bg-body: #141a24;
+        }
+
+        [data-high-contrast="true"] {
+            --rosa: #b91c1c;
+            --verde: #065f46;
+            --azul: #1a365d;
+            --amarelo: #d69e2e;
+            --preto: #000000;
+            --branco: #ffffff;
+            --cinza-claro: #f3f4f6;
+            --cinza-azulado: #e5e7eb;
+            --texto-corpo: #000000;
+            --cinza-borda: #000000;
+            --bg-body: #ffffff;
+        }
+
+        /* ============================================
+                   RESET E ESTILOS GERAIS
+                   ============================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--fonte-principal);
+            background-color: var(--bg-body);
+            color: var(--texto-corpo);
+            line-height: 1.8;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a {
+            color: var(--azul);
+            text-decoration: none;
+            transition: var(--transicao-padrao);
+        }
+
+        a:hover,
+        a:focus-visible {
+            color: var(--rosa);
+            text-decoration: underline;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--azul);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* ============================================
+                   SKIP TO CONTENT
+                   ============================================ */
+        .skip-to-content {
+            position: absolute;
+            top: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--preto);
+            color: var(--branco);
+            padding: 12px 24px;
+            border-radius: 0 0 8px 8px;
+            z-index: 10000;
+            font-weight: 600;
+            transition: top 0.2s ease;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+            text-decoration: none;
+            color: var(--branco);
+        }
+
+        /* ============================================
+                   HEADER
+                   ============================================ */
+        .site-header {
+            background: var(--branco);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 4px solid transparent;
+            border-image: linear-gradient(90deg, var(--rosa), var(--verde), var(--amarelo), var(--azul)) 1;
+            transition: background 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-img {
+            height: 52px;
+            width: auto;
+            border-radius: 12px;
+            transition: var(--transicao-padrao);
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
+        }
+
+        .logo-img:hover {
+            transform: scale(1.04) rotate(-1deg);
+            filter: drop-shadow(0 4px 16px rgba(232, 63, 111, 0.25));
+        }
+
+        .logo-text {
+            font-family: var(--fonte-titulos);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--preto);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text a {
+            color: var(--preto);
+            text-decoration: none;
+        }
+
+        .logo-text a:hover {
+            color: var(--rosa);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--texto-corpo);
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 4px 0;
+            border-bottom: 2px solid transparent;
+            transition: var(--transicao-padrao);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--rosa);
+            transition: var(--transicao-padrao);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a:focus-visible::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: var(--rosa);
+            text-decoration: none;
+        }
+
+        .nav-links .active {
+            color: var(--rosa);
+        }
+
+        .nav-links .active::after {
+            width: 100%;
+        }
+
+        /* ============================================
+                   TOOLBAR DE ACESSIBILIDADE
+                   ============================================ */
+        .accessibility-toolbar {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: var(--branco);
+            padding: 12px;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+            border: 1px solid var(--cinza-borda);
+            transition: var(--transicao-padrao);
+            max-height: 80vh;
+            overflow-y: auto;
+            max-width: 220px;
+        }
+
+        .accessibility-toolbar button {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            padding: 8px 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: var(--texto-corpo);
+            transition: var(--transicao-padrao);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--fonte-principal);
+            font-size: 0.9rem;
+            min-width: 44px;
+            min-height: 44px;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .accessibility-toolbar button:hover,
+        .accessibility-toolbar button:focus-visible {
+            background: var(--cinza-claro);
+            color: var(--rosa);
+        }
+
+        .accessibility-toolbar button.active {
+            background: var(--rosa);
+            color: var(--branco);
+        }
+
+        .toolbar-toggle {
+            background: var(--rosa) !important;
+            color: var(--branco) !important;
+            border-radius: 50% !important;
+            width: 52px !important;
+            height: 52px !important;
+            font-size: 1.8rem !important;
+            justify-content: center !important;
+            box-shadow: 0 4px 16px rgba(232, 63, 111, 0.4);
+            flex-shrink: 0;
+        }
+
+        .toolbar-toggle:hover {
+            transform: scale(1.05);
+            background: var(--rosa) !important;
+        }
+
+        .toolbar-content {
+            display: none;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .toolbar-content.open {
+            display: flex;
+        }
+
+        .toolbar-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--texto-corpo);
+            opacity: 0.6;
+            padding: 6px 8px 2px;
+            border-top: 1px solid var(--cinza-borda);
+            margin-top: 4px;
+        }
+
+        .toolbar-label:first-of-type {
+            border-top: none;
+            margin-top: 0;
+        }
+
+        /* ============================================
+                   VLIBRAS
+                   ============================================ */
+        .vlibras-container {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 9998;
+        }
+
+        /* ============================================
+                   BREADCRUMB
+                   ============================================ */
+        .breadcrumb {
+            font-size: 0.85rem;
+            padding: 16px 0;
+            color: var(--texto-corpo);
+            opacity: 0.7;
+        }
+
+        .breadcrumb a {
+            color: var(--azul);
+        }
+
+        .breadcrumb span {
+            margin: 0 6px;
+        }
+
+        /* ============================================
+                   CONTEÚDO DA POLÍTICA
+                   ============================================ */
+        .page-content {
+            padding: 60px 0 80px;
+        }
+
+        .page-content h1 {
+            font-family: var(--fonte-titulos);
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            color: var(--preto);
+        }
+
+        .page-content .subtitle {
+            font-size: 1.1rem;
+            color: var(--texto-corpo);
+            opacity: 0.7;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--cinza-borda);
+            padding-bottom: 20px;
+        }
+
+        .page-content h2 {
+            font-family: var(--fonte-titulos);
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: var(--preto);
+        }
+
+        .page-content h3 {
+            font-family: var(--fonte-titulos);
+            font-size: 1.4rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: var(--preto);
+        }
+
+        .page-content p {
+            margin-bottom: 16px;
+        }
+
+        .page-content ul {
+            margin: 12px 0 20px 24px;
+        }
+
+        .page-content ul li {
+            margin-bottom: 8px;
+        }
+
+        .page-content .highlight-box {
+            background: var(--cinza-claro);
+            border-left: 4px solid var(--rosa);
+            padding: 20px 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+        }
+
+        .page-content .highlight-box strong {
+            color: var(--rosa);
+        }
+
+        .page-content .last-update {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--cinza-borda);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .page-content .btn-voltar {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--azul);
+            color: var(--branco);
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transicao-padrao);
+            margin-top: 24px;
+        }
+
+        .page-content .btn-voltar:hover {
+            background: var(--rosa);
+            color: var(--branco);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        /* ============================================
+                   FOOTER
+                   ============================================ */
+        footer {
+            background: #1a2a36;
+            color: #cddfe7;
+            padding: 48px 0 24px;
+            margin-top: 40px;
+        }
+
+        [data-theme="dark"] footer {
+            background: #0d1b2a;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 32px;
+        }
+
+        .footer-grid h4 {
+            color: var(--branco);
+            font-family: var(--fonte-titulos);
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+        }
+
+        .footer-grid ul {
+            list-style: none;
+        }
+
+        .footer-grid ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-grid ul a {
+            color: #cddfe7;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transicao-padrao);
+        }
+
+        .footer-grid ul a:hover,
+        .footer-grid ul a:focus-visible {
+            color: var(--amarelo);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom a {
+            color: #cddfe7;
+            transition: var(--transicao-padrao);
+        }
+
+        .footer-bottom a:hover {
+            color: var(--amarelo);
+        }
+
+        .footer-logo-small {
+            height: 32px;
+            width: auto;
+            border-radius: 8px;
+            opacity: 0.8;
+        }
+
+        /* ============================================
+                   RESPONSIVIDADE
+                   ============================================ */
+        @media (max-width: 880px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+                padding: 16px 0;
+                border-top: 1px solid var(--cinza-borda);
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .header-inner {
+                position: relative;
+            }
+
+            .menu-toggle {
+                display: block !important;
+                background: none;
+                border: none;
+                font-size: 1.8rem;
+                cursor: pointer;
+                color: var(--texto-corpo);
+                padding: 4px 8px;
+            }
+
+            .accessibility-toolbar {
+                left: 12px;
+                bottom: 12px;
+                padding: 10px;
+                max-width: 190px;
+            }
+
+            .accessibility-toolbar button {
+                font-size: 1rem;
+                padding: 6px 10px;
+                min-width: 36px;
+                min-height: 36px;
+                gap: 6px;
+            }
+
+            .toolbar-toggle {
+                width: 44px !important;
+                height: 44px !important;
+                font-size: 1.4rem !important;
+            }
+
+            .vlibras-container {
+                bottom: 80px;
+                right: 12px;
+            }
+
+            .page-content h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            .page-content {
+                padding: 40px 0 60px;
+            }
+            .logo-text {
+                font-size: 1.1rem;
+            }
+            .logo-img {
+                height: 40px;
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        /* ============================================
+                   FONTE PARA DISLEXIA
+                   ============================================ */
+        .dyslexic-font {
+            font-family: 'OpenDyslexic', 'Comic Sans MS', 'Inter', sans-serif !important;
+        }
+
+        /* ============================================
+                   REDUZIR ANIMAÇÕES
+                   ============================================ */
+        .reduce-motion *,
+        .reduce-motion *::before,
+        .reduce-motion *::after {
+            animation-duration: 0.001s !important;
+            transition-duration: 0.001s !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================
+    SKIP TO CONTENT
+    ============================================ -->
+    <a class="skip-to-content" href="#main-content">Pular para o conteúdo principal</a>
+
+    <!-- ============================================
+    HEADER
+    ============================================ -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="logo-container">
+                <img src="https://fabiowlademir.github.io/teoriadodireito/logo.jpg" alt="Logo do Grupo de Pesquisa Teoria do Direito" class="logo-img" loading="lazy">
+                <div class="logo-text">
+                    <a href="index.html" aria-label="Teoria do Direito - Página inicial">TEORIA DO DIREITO</a>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links" id="navLinks" role="list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html#membros">Membros</a></li>
+                    <li><a href="artigos.html">Artigos</a></li>
+                    <li><a href="index.html#noticias">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="politica-privacidade.html" class="active">Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+    BREADCRUMB
+    ============================================ -->
+    <div class="container" aria-label="Migalhas de pão">
+        <nav class="breadcrumb">
+            <a href="index.html">Início</a>
+            <span>/</span>
+            <span>Política de Privacidade</span>
+        </nav>
+    </div>
+
+    <!-- ============================================
+    MAIN CONTENT
+    ============================================ -->
+    <main id="main-content" class="page-content">
+        <div class="container">
+
+            <h1>Política de Privacidade</h1>
+            <p class="subtitle">Compromisso com a transparência e a proteção dos seus dados pessoais em conformidade com a LGPD.</p>
+
+            <div class="highlight-box">
+                <p><strong>📌 Resumo:</strong> O Grupo de Pesquisa Teoria do Direito (CNPq/UNISINOS) coleta e trata dados pessoais exclusivamente para fins acadêmicos, de comunicação e gestão de eventos. Seus dados são protegidos e nunca são compartilhados com terceiros sem seu consentimento expresso.</p>
+            </div>
+
+            <h2>1. Introdução</h2>
+            <p>
+                A presente Política de Privacidade descreve como o <strong>Grupo de Pesquisa Teoria do Direito</strong> (doravante denominado "Grupo", "nós" ou "nosso"), certificado pelo CNPq e sediado no PPGD da UNISINOS, coleta, utiliza, armazena e protege os dados pessoais dos usuários de nosso site e serviços, em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)</strong> e demais legislações aplicáveis.
+            </p>
+            <p>
+                Ao utilizar nosso site e serviços, você declara ter lido, compreendido e concordado com os termos desta Política de Privacidade.
+            </p>
+
+            <h2>2. Definições</h2>
+            <ul>
+                <li><strong>Dados Pessoais:</strong> Qualquer informação relacionada a uma pessoa natural identificada ou identificável.</li>
+                <li><strong>Tratamento:</strong> Toda operação realizada com dados pessoais, como coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação, transferência, difusão ou extração.</li>
+                <li><strong>Titular:</strong> Pessoa natural a quem se referem os dados pessoais que são objeto de tratamento.</li>
+                <li><strong>Controlador:</strong> Pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais.</li>
+                <li><strong>Operador:</strong> Pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do controlador.</li>
+            </ul>
+
+            <h2>3. Quais dados coletamos e como os utilizamos</h2>
+
+            <h3>3.1. Dados fornecidos voluntariamente</h3>
+            <p>Coletamos os dados que você nos fornece voluntariamente ao:</p>
+            <ul>
+                <li><strong>Preencher o formulário de contato:</strong> Nome, e-mail, assunto e mensagem. Utilizamos essas informações para responder às suas solicitações, dúvidas ou mensagens.</li>
+                <li><strong>Inscrever-se em eventos:</strong> Nome, e-mail, CPF (quando exigido), instituição de vínculo e demais informações necessárias para emissão de certificados e gestão do evento.</li>
+                <li><strong>Participar de pesquisas ou grupos de estudo:</strong> Dados acadêmicos e de contato para comunicação e organização das atividades.</li>
+            </ul>
+
+            <h3>3.2. Dados coletados automaticamente</h3>
+            <p>Quando você navega em nosso site, podemos coletar automaticamente:</p>
+            <ul>
+                <li><strong>Dados de navegação:</strong> Endereço IP, tipo de navegador, páginas visitadas, tempo de permanência, origem do acesso (como links de outros sites).</li>
+                <li><strong>Cookies:</strong> Utilizamos cookies para melhorar sua experiência, lembrar preferências de acessibilidade (como tema escuro ou tamanho da fonte) e entender como o site é utilizado.</li>
+            </ul>
+            <p>Você pode gerenciar suas preferências de cookies através das configurações do seu navegador.</p>
+
+            <h3>3.3. Finalidades do tratamento</h3>
+            <p>Utilizamos seus dados para:</p>
+            <ul>
+                <li>Responder a dúvidas, solicitações e mensagens enviadas pelo site.</li>
+                <li>Gerenciar inscrições em eventos e emitir certificados.</li>
+                <li>Comunicar sobre atividades, eventos, publicações e novidades do Grupo de Pesquisa.</li>
+                <li>Aprimorar a experiência de navegação e a funcionalidade do site.</li>
+                <li>Cumprir obrigações legais e regulatórias, quando aplicável.</li>
+            </ul>
+
+            <h2>4. Base legal para o tratamento</h2>
+            <p>Tratamos seus dados pessoais com base nas seguintes hipóteses legais previstas na LGPD:</p>
+            <ul>
+                <li><strong>Consentimento:</strong> Para o envio de comunicações e newsletters, você pode optar por receber ou não essas informações.</li>
+                <li><strong>Legítimo interesse:</strong> Para responder a contatos, gerenciar eventos acadêmicos e melhorar nossos serviços, sempre respeitando seus direitos e expectativas.</li>
+                <li><strong>Execução de contrato:</strong> Para cumprir com as obrigações decorrentes de sua participação em eventos ou atividades do Grupo.</li>
+                <li><strong>Obrigação legal:</strong> Para cumprir com exigências legais, como emissão de certificados e prestação de contas a órgãos de fomento (CNPq, CAPES, etc.).</li>
+            </ul>
+
+            <h2>5. Compartilhamento de dados</h2>
+            <p>
+                O Grupo de Pesquisa Teoria do Direito <strong>NÃO</strong> compartilha seus dados pessoais com terceiros para fins de marketing ou publicidade.
+            </p>
+            <p>
+                Seus dados podem ser compartilhados apenas:
+            </p>
+            <ul>
+                <li><strong>Com a UNISINOS:</strong> Instituição-sede do Grupo, para fins de gestão acadêmica e administrativa.</li>
+                <li><strong>Com órgãos de fomento (CNPq, CAPES, etc.):</strong> Para prestação de contas e comprovação das atividades de pesquisa.</li>
+                <li><strong>Com parceiros acadêmicos:</strong> Em casos específicos de projetos de pesquisa em colaboração, sempre com seu consentimento prévio.</li>
+                <li><strong>Por determinação legal:</strong> Quando exigido por lei, ordem judicial ou órgão regulador competente.</li>
+            </ul>
+
+            <h2>6. Armazenamento e segurança dos dados</h2>
+            <p>
+                Seus dados são armazenados em servidores seguros e adotamos medidas técnicas e organizacionais adequadas para proteger suas informações contra acesso não autorizado, perda, destruição ou alteração.
+            </p>
+            <p>
+                Os dados são mantidos pelo tempo necessário para cumprir as finalidades para as quais foram coletados, respeitando os prazos legais e regulatórios.
+            </p>
+
+            <h2>7. Direitos dos titulares</h2>
+            <p>Nos termos da LGPD, você tem os seguintes direitos:</p>
+            <ul>
+                <li><strong>Confirmação e acesso:</strong> Saber se tratamos seus dados e acessá-los.</li>
+                <li><strong>Correção:</strong> Solicitar a correção de dados incompletos, inexatos ou desatualizados.</li>
+                <li><strong>Anonimização, bloqueio ou eliminação:</strong> Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade.</li>
+                <li><strong>Portabilidade:</strong> Solicitar a portabilidade dos dados a outro fornecedor de serviço.</li>
+                <li><strong>Eliminação:</strong> Solicitar a eliminação dos dados tratados com seu consentimento.</li>
+                <li><strong>Revogação do consentimento:</strong> Revogar seu consentimento a qualquer momento.</li>
+                <li><strong>Oposição:</strong> Opor-se ao tratamento realizado com base em legítimo interesse.</li>
+            </ul>
+            <p>Para exercer seus direitos, entre em contato conosco pelo e-mail: <a href="mailto:GrupodepesquisaTeoriadoDireito@gmail.com">GrupodepesquisaTeoriadoDireito@gmail.com</a>.</p>
+
+            <h2>8. Atualizações desta política</h2>
+            <p>
+                Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças em nossas práticas ou na legislação. Recomendamos que você a revise regularmente.
+            </p>
+            <p>
+                A versão mais recente será sempre publicada neste link.
+            </p>
+
+            <h2>9. Como entrar em contato</h2>
+            <p>
+                Se você tiver dúvidas, sugestões ou quiser exercer seus direitos relacionados à proteção de dados, entre em contato conosco:
+            </p>
+            <ul>
+                <li><strong>E-mail:</strong> <a href="mailto:GrupodepesquisaTeoriadoDireito@gmail.com">GrupodepesquisaTeoriadoDireito@gmail.com</a></li>
+                <li><strong>Telefone:</strong> (51) 3590-8148</li>
+                <li><strong>Endereço:</strong> Av. Unisinos, 950 · Cristo Rei · São Leopoldo - RS · CEP: 93022-000</li>
+            </ul>
+
+            <div class="last-update">
+                <p><strong>Última atualização:</strong> 08 de agosto de 2026</p>
+                <p><i class="fas fa-shield-alt" aria-hidden="true" style="color: var(--verde);"></i> Em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).</p>
+            </div>
+
+            <a href="index.html" class="btn-voltar"><i class="fas fa-arrow-left" aria-hidden="true"></i> Voltar para o início</a>
+
+        </div>
+    </main>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Teoria do Direito</h4>
+                    <img src="https://fabiowlademir.github.io/teoriadodireito/logo.jpg" alt="Logo Teoria do Direito" class="footer-logo-small" loading="lazy">
+                    <p style="margin-top: 8px;">Grupo de Pesquisa certificado pelo CNPq · PPGD UNISINOS</p>
+                    <p style="margin-top: 4px; font-size: 0.9rem;">© 2026 Todos os direitos reservados.</p>
+                    <div style="display: flex; gap: 16px; margin-top: 12px;">
+                        <a href="https://www.instagram.com/theoriadodireito/" target="_blank" rel="noopener" aria-label="Instagram" style="color: #cddfe7; font-size: 1.4rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@fabiowlademirrs" target="_blank" rel="noopener" aria-label="YouTube" style="color: #cddfe7; font-size: 1.4rem;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="index.html#membros">Membros</a></li>
+                        <li><a href="artigos.html">Artigos</a></li>
+                        <li><a href="index.html#noticias">Notícias</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Áreas de Pesquisa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Teoria dos Sistemas</a></li>
+                        <li><a href="sobre.html">Constitucionalismo</a></li>
+                        <li><a href="sobre.html">Hermenêutica</a></li>
+                        <li><a href="sobre.html">Sociologia Jurídica</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="politica-privacidade.html" style="color: var(--amarelo);">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Mapa do Site</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    <span>Desenvolvido em conformidade com <strong>WCAG 2.2</strong>, <strong>eMAG</strong> e <strong>LBI</strong>.</span>
+                </div>
+                <div>
+                    <i class="fas fa-shield-alt" aria-hidden="true" style="color: var(--verde);"></i> LGPD · Dados protegidos
+                </div>
+                <div>
+                    <span style="display: block;">Design & Desenvolvimento: <strong>Fábio Wlademir</strong></span>
+                    <div style="display: flex; gap: 12px; margin-top: 4px; justify-content: flex-end;">
+                        <a href="https://fabiowlademir.github.io/" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fas fa-globe"></i></a>
+                        <a href="https://wa.me/5551998883187" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/fabiowlademir/" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@fabiowlademirrs" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/fabiowlademirrs" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+    BANNER LGPD (flutuante)
+    ============================================ -->
+    <div class="lgpd-banner" id="lgpdBanner" role="dialog" aria-label="Aviso de privacidade LGPD" style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--preto); color: var(--branco); padding: 16px 32px; z-index: 10001; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; font-size: 0.9rem; border-top: 4px solid var(--rosa); box-shadow: 0 -4px 20px rgba(0,0,0,0.2); transform: translateY(100%); transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);">
+        <p style="flex: 1; min-width: 200px; margin: 0;">
+            <i class="fas fa-shield-alt" aria-hidden="true" style="color: var(--verde);"></i>
+            Utilizamos cookies e tecnologias para melhorar sua experiência. Ao continuar navegando, você concorda com nossa
+            <a href="politica-privacidade.html" style="color: var(--amarelo);">Política de Privacidade</a> em conformidade com a LGPD.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <button id="lgpdAccept" style="padding: 10px 24px; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; font-family: var(--fonte-principal); font-size: 0.9rem; background: var(--verde); color: var(--branco);">Aceitar</button>
+            <button id="lgpdDeny" style="padding: 10px 24px; border: 2px solid var(--cinza-borda); border-radius: 10px; font-weight: 600; cursor: pointer; font-family: var(--fonte-principal); font-size: 0.9rem; background: transparent; color: var(--branco);">Recusar</button>
+        </div>
+    </div>
+
+    <!-- ============================================
+    TOOLBAR DE ACESSIBILIDADE
+    ============================================ -->
+    <div class="accessibility-toolbar" role="toolbar" aria-label="Ferramentas de acessibilidade">
+        <button class="toolbar-toggle" id="toolbarToggle" aria-expanded="false" aria-label="Abrir ferramentas de acessibilidade">
+            ♿
+        </button>
+        <div class="toolbar-content" id="toolbarContent">
+            <span class="toolbar-label">Tema</span>
+            <button data-action="theme" data-value="light" aria-label="Modo claro">
+                <i class="fas fa-sun" aria-hidden="true"></i> Claro
+            </button>
+            <button data-action="theme" data-value="dark" aria-label="Modo escuro">
+                <i class="fas fa-moon" aria-hidden="true"></i> Escuro
+            </button>
+
+            <span class="toolbar-label">Contraste</span>
+            <button data-action="contrast" data-value="normal" aria-label="Contraste normal">
+                <i class="fas fa-adjust" aria-hidden="true"></i> Normal
+            </button>
+            <button data-action="contrast" data-value="high" aria-label="Alto contraste">
+                <i class="fas fa-circle-half-stroke" aria-hidden="true"></i> Alto
+            </button>
+
+            <span class="toolbar-label">Fonte</span>
+            <button data-action="fontSize" data-value="small" aria-label="Diminuir fonte">A-</button>
+            <button data-action="fontSize" data-value="medium" aria-label="Fonte padrão">A</button>
+            <button data-action="fontSize" data-value="large" aria-label="Aumentar fonte">A+</button>
+            <button data-action="fontSize" data-value="xlarge" aria-label="Fonte extra grande">A++</button>
+
+            <span class="toolbar-label">Leitura</span>
+            <button data-action="dyslexic" data-value="on" aria-label="Fonte para dislexia">
+                <i class="fas fa-book-open" aria-hidden="true"></i> Dislexia
+            </button>
+            <button data-action="reduceMotion" data-value="on" aria-label="Reduzir animações">
+                <i class="fas fa-person-walking" aria-hidden="true"></i> Reduzir
+            </button>
+
+            <span class="toolbar-label">Voz</span>
+            <button id="voiceBtn" aria-label="Ativar comando de voz">
+                <i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz
+            </button>
+
+            <span class="toolbar-label">Áudio</span>
+            <button id="listenBtn" aria-label="Ouvir página">
+                <i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir
+            </button>
+        </div>
+    </div>
+
+    <!-- ============================================
+    VLIBRAS
+    ============================================ -->
+    <div class="vlibras-container">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+    SCRIPTS
+    ============================================ -->
+    <script>
+        (function() {
+            'use strict';
+
+            // ============================================
+            // 1. MENU MOBILE
+            // ============================================
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', function() {
+                    const isOpen = navLinks.classList.toggle('open');
+                    this.setAttribute('aria-expanded', isOpen);
+                    this.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                    });
+                });
+            }
+
+            // ============================================
+            // 2. TOOLBAR DE ACESSIBILIDADE
+            // ============================================
+            const toolbarToggle = document.getElementById('toolbarToggle');
+            const toolbarContent = document.getElementById('toolbarContent');
+            let toolbarOpen = false;
+
+            if (toolbarToggle && toolbarContent) {
+                toolbarToggle.addEventListener('click', function() {
+                    toolbarOpen = !toolbarOpen;
+                    toolbarContent.classList.toggle('open', toolbarOpen);
+                    this.setAttribute('aria-expanded', toolbarOpen);
+                    this.textContent = toolbarOpen ? '✕' : '♿';
+                });
+
+                document.addEventListener('click', function(e) {
+                    const toolbar = document.querySelector('.accessibility-toolbar');
+                    if (toolbar && !toolbar.contains(e.target) && toolbarOpen) {
+                        toolbarOpen = false;
+                        toolbarContent.classList.remove('open');
+                        toolbarToggle.setAttribute('aria-expanded', 'false');
+                        toolbarToggle.textContent = '♿';
+                    }
+                });
+            }
+
+            // ============================================
+            // 3. AÇÕES DA TOOLBAR
+            // ============================================
+            const actions = {
+                theme: (value) => {
+                    document.documentElement.setAttribute('data-theme', value);
+                    localStorage.setItem('theme', value);
+                },
+                contrast: (value) => {
+                    document.documentElement.setAttribute('data-high-contrast', value === 'high' ? 'true' : 'false');
+                    localStorage.setItem('highContrast', value === 'high' ? 'true' : 'false');
+                },
+                fontSize: (value) => {
+                    const sizes = { small: '0.85rem', medium: '1rem', large: '1.2rem', xlarge: '1.4rem' };
+                    document.documentElement.style.fontSize = sizes[value] || '1rem';
+                    localStorage.setItem('fontSize', value);
+                },
+                dyslexic: (value) => {
+                    document.body.classList.toggle('dyslexic-font', value === 'on');
+                    localStorage.setItem('dyslexic', value === 'on' ? 'true' : 'false');
+                },
+                reduceMotion: (value) => {
+                    document.body.classList.toggle('reduce-motion', value === 'on');
+                    localStorage.setItem('reduceMotion', value === 'on' ? 'true' : 'false');
+                }
+            };
+
+            document.querySelectorAll('[data-action]').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const action = this.dataset.action;
+                    const value = this.dataset.value;
+                    if (actions[action]) {
+                        actions[action](value);
+                    }
+                });
+            });
+
+            // ============================================
+            // 4. RESTAURAR PREFERÊNCIAS
+            // ============================================
+            function restorePreferences() {
+                const theme = localStorage.getItem('theme');
+                if (theme) document.documentElement.setAttribute('data-theme', theme);
+
+                const contrast = localStorage.getItem('highContrast');
+                if (contrast) document.documentElement.setAttribute('data-high-contrast', contrast);
+
+                const fontSize = localStorage.getItem('fontSize');
+                if (fontSize) {
+                    const sizes = { small: '0.85rem', medium: '1rem', large: '1.2rem', xlarge: '1.4rem' };
+                    document.documentElement.style.fontSize = sizes[fontSize] || '1rem';
+                }
+
+                if (localStorage.getItem('dyslexic') === 'true') {
+                    document.body.classList.add('dyslexic-font');
+                }
+
+                if (localStorage.getItem('reduceMotion') === 'true') {
+                    document.body.classList.add('reduce-motion');
+                }
+            }
+            restorePreferences();
+
+            // ============================================
+            // 5. LGPD BANNER
+            // ============================================
+            const lgpdBanner = document.getElementById('lgpdBanner');
+            const lgpdAccept = document.getElementById('lgpdAccept');
+            const lgpdDeny = document.getElementById('lgpdDeny');
+
+            const lgpdStatus = localStorage.getItem('lgpdConsent');
+            if (lgpdStatus !== 'accepted' && lgpdStatus !== 'denied') {
+                lgpdBanner.classList.add('show');
+            }
+
+            if (lgpdAccept) {
+                lgpdAccept.addEventListener('click', function() {
+                    localStorage.setItem('lgpdConsent', 'accepted');
+                    lgpdBanner.classList.remove('show');
+                });
+            }
+
+            if (lgpdDeny) {
+                lgpdDeny.addEventListener('click', function() {
+                    localStorage.setItem('lgpdConsent', 'denied');
+                    lgpdBanner.classList.remove('show');
+                });
+            }
+
+            // ============================================
+            // 6. VLIBRAS
+            // ============================================
+            const vlibrasScript = document.createElement('script');
+            vlibrasScript.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
+            vlibrasScript.async = true;
+            vlibrasScript.onload = function() {
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            };
+            document.body.appendChild(vlibrasScript);
+
+            // ============================================
+            // 7. VOICE COMMAND
+            // ============================================
+            const voiceBtn = document.getElementById('voiceBtn');
+            let isListening = false;
+            let recognition = null;
+
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                recognition = new SpeechRecognition();
+                recognition.lang = 'pt-BR';
+                recognition.continuous = false;
+                recognition.interimResults = false;
+
+                document.addEventListener('keydown', function(e) {
+                    if (e.ctrlKey && e.shiftKey && e.key === 'V') {
+                        e.preventDefault();
+                        toggleVoiceRecognition();
+                    }
+                });
+
+                if (voiceBtn) {
+                    voiceBtn.addEventListener('click', toggleVoiceRecognition);
+                }
+
+                function toggleVoiceRecognition() {
+                    if (!recognition) return;
+                    if (isListening) {
+                        recognition.stop();
+                        isListening = false;
+                        if (voiceBtn) {
+                            voiceBtn.innerHTML = '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                            voiceBtn.style.background = 'transparent';
+                            voiceBtn.style.color = '';
+                        }
+                        return;
+                    }
+
+                    try {
+                        recognition.start();
+                        isListening = true;
+                        if (voiceBtn) {
+                            voiceBtn.innerHTML = '<i class="fas fa-microphone-slash" aria-hidden="true"></i> Parar';
+                            voiceBtn.style.background = 'var(--rosa)';
+                            voiceBtn.style.color = 'white';
+                        }
+                    } catch (e) {
+                        console.warn('Erro ao iniciar reconhecimento de voz:', e);
+                        isListening = false;
+                    }
+                }
+
+                recognition.onresult = function(event) {
+                    const command = event.results[0][0].transcript.toLowerCase().trim();
+                    console.log('Comando de voz:', command);
+
+                    const commands = {
+                        'início': () => window.location.href = 'index.html',
+                        'sobre': () => window.location.href = 'sobre.html',
+                        'artigos': () => window.location.href = 'artigos.html',
+                        'contato': () => window.location.href = 'contato.html',
+                        'privacidade': () => window.location.href = 'politica-privacidade.html',
+                        'modo escuro': () => actions.theme('dark'),
+                        'modo claro': () => actions.theme('light'),
+                        'aumentar fonte': () => actions.fontSize('large'),
+                        'diminuir fonte': () => actions.fontSize('small'),
+                    };
+
+                    for (const [key, action] of Object.entries(commands)) {
+                        if (command.includes(key)) {
+                            action();
+                            recognition.stop();
+                            isListening = false;
+                            if (voiceBtn) {
+                                voiceBtn.innerHTML = '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                                voiceBtn.style.background = 'transparent';
+                                voiceBtn.style.color = '';
+                            }
+                            break;
+                        }
+                    }
+                };
+
+                recognition.onerror = function() {
+                    isListening = false;
+                    if (voiceBtn) {
+                        voiceBtn.innerHTML = '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                        voiceBtn.style.background = 'transparent';
+                        voiceBtn.style.color = '';
+                    }
+                };
+
+                recognition.onend = function() {
+                    isListening = false;
+                    if (voiceBtn) {
+                        voiceBtn.innerHTML = '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                        voiceBtn.style.background = 'transparent';
+                        voiceBtn.style.color = '';
+                    }
+                };
+            } else {
+                if (voiceBtn) {
+                    voiceBtn.style.opacity = '0.5';
+                    voiceBtn.title = 'Reconhecimento de voz não suportado neste navegador';
+                }
+            }
+
+            // ============================================
+            // 8. OUVIR PÁGINA
+            // ============================================
+            const listenBtn = document.getElementById('listenBtn');
+            let isSpeaking = false;
+            let speechSynth = window.speechSynthesis;
+
+            if (listenBtn && speechSynth) {
+                listenBtn.addEventListener('click', function() {
+                    if (isSpeaking) {
+                        speechSynth.cancel();
+                        isSpeaking = false;
+                        listenBtn.innerHTML = '<i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir';
+                        listenBtn.style.background = 'transparent';
+                        listenBtn.style.color = '';
+                        return;
+                    }
+
+                    const mainContent = document.getElementById('main-content');
+                    const text = mainContent ? mainContent.innerText : document.body.innerText;
+                    const cleanText = text
+                        .replace(/\s+/g, ' ')
+                        .replace(/©.*$/s, '')
+                        .trim();
+
+                    const utterance = new SpeechSynthesisUtterance(cleanText);
+                    utterance.lang = 'pt-BR';
+                    utterance.rate = 0.9;
+                    utterance.pitch = 1;
+
+                    utterance.onend = function() {
+                        isSpeaking = false;
+                        listenBtn.innerHTML = '<i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir';
+                        listenBtn.style.background = 'transparent';
+                        listenBtn.style.color = '';
+                    };
+
+                    utterance.onerror = function() {
+                        isSpeaking = false;
+                        listenBtn.innerHTML = '<i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir';
+                        listenBtn.style.background = 'transparent';
+                        listenBtn.style.color = '';
+                    };
+
+                    speechSynth.speak(utterance);
+                    isSpeaking = true;
+                    listenBtn.innerHTML = '<i class="fas fa-stop" aria-hidden="true"></i> Parar';
+                    listenBtn.style.background = 'var(--rosa)';
+                    listenBtn.style.color = 'white';
+                });
+            }
+
+            console.log('📜 Política de Privacidade carregada em conformidade com a LGPD.');
+            console.log('🔒 Seus dados estão protegidos.');
+
+        })();
+    </script>
+
+    <!-- ============================================
+    VLIBRAS CSS ADICIONAL
+    ============================================ -->
+    <style>
+        .vlibras-container {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 9998;
+        }
+
+        @media (max-width: 880px) {
+            .vlibras-container {
+                bottom: 80px;
+                right: 12px;
+            }
+        }
+
+        .vlibras-container [vw-access-button] {
+            width: 52px !important;
+            height: 52px !important;
+        }
+
+        .lgpd-banner {
+            transform: translateY(100%);
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .lgpd-banner.show {
+            transform: translateY(0);
+        }
+    </style>
+
+</body>
+</html>

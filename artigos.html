@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos e Publicações | Teoria do Direito – CNPq/UNISINOS</title>
+    <meta name="description" content="Produção acadêmica do Grupo de Pesquisa Teoria do Direito. Artigos, livros e capítulos publicados pelos pesquisadores do grupo.">
+    <meta name="keywords" content="artigos, publicações, Teoria do Direito, CNPq, UNISINOS, pesquisa jurídica">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fabiowlademir.github.io/teoriadodireito/artigos.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fabiowlademir.github.io/teoriadodireito/artigos.html">
+    <meta property="og:title" content="Artigos e Publicações | Teoria do Direito">
+    <meta property="og:description" content="Produção acadêmica do Grupo de Pesquisa Teoria do Direito.">
+    <meta property="og:image" content="https://fabiowlademir.github.io/teoriadodireito/logo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Artigos e Publicações do Grupo de Pesquisa Teoria do Direito",
+        "description": "Produção acadêmica do Grupo de Pesquisa Teoria do Direito.",
+        "publisher": {
+            "@type": "ResearchOrganization",
+            "name": "Grupo de Pesquisa Teoria do Direito"
+        }
+    }
+    </script>
+
+    <style>
+        /* ===== MESMOS ESTILOS DO PORTAL PRINCIPAL ===== */
+        :root {
+            --rosa: #E83F6F;
+            --verde: #2DAA7E;
+            --azul: #2C7DA0;
+            --amarelo: #F9C74F;
+            --preto: #1F2937;
+            --cinza-claro: #f0f2f5;
+            --cinza-azulado: #e8ecf1;
+            --cinza-borda: #dce1e8;
+            --branco: #ffffff;
+            --texto-corpo: #2d3748;
+            --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.04);
+            --sombra-media: 0 12px 40px rgba(0, 0, 0, 0.08);
+            --fonte-principal: 'Inter', sans-serif;
+            --fonte-titulos: 'Cormorant Garamond', serif;
+            --transicao-padrao: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --border-radius: 28px;
+            --bg-body: #f5f7fa;
+        }
+
+        [data-theme="dark"] {
+            --branco: #1a202c;
+            --cinza-claro: #2d3748;
+            --cinza-azulado: #2a313a;
+            --cinza-borda: #4a5568;
+            --texto-corpo: #e2e8f0;
+            --preto: #f7fafc;
+            --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.3);
+            --sombra-media: 0 12px 40px rgba(0, 0, 0, 0.5);
+            --bg-body: #141a24;
+        }
+
+        [data-high-contrast="true"] {
+            --rosa: #b91c1c;
+            --verde: #065f46;
+            --azul: #1a365d;
+            --amarelo: #d69e2e;
+            --preto: #000000;
+            --branco: #ffffff;
+            --cinza-claro: #f3f4f6;
+            --cinza-azulado: #e5e7eb;
+            --texto-corpo: #000000;
+            --cinza-borda: #000000;
+            --bg-body: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--fonte-principal);
+            background-color: var(--bg-body);
+            color: var(--texto-corpo);
+            line-height: 1.8;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        a { color: var(--azul); text-decoration: none; transition: var(--transicao-padrao); }
+        a:hover, a:focus-visible { color: var(--rosa); text-decoration: underline; }
+        :focus-visible { outline: 3px solid var(--azul); outline-offset: 2px; border-radius: 4px; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+        .skip-to-content {
+            position: absolute; top: -100%; left: 50%; transform: translateX(-50%);
+            background: var(--preto); color: var(--branco); padding: 12px 24px;
+            border-radius: 0 0 8px 8px; z-index: 10000; font-weight: 600;
+            transition: top 0.2s ease;
+        }
+        .skip-to-content:focus { top: 0; text-decoration: none; color: var(--branco); }
+
+        /* HEADER */
+        .site-header {
+            background: var(--branco);
+            position: sticky; top: 0; z-index: 1000;
+            border-bottom: 4px solid transparent;
+            border-image: linear-gradient(90deg, var(--rosa), var(--verde), var(--amarelo), var(--azul)) 1;
+            transition: background 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 12px 0; flex-wrap: wrap; gap: 12px;
+        }
+        .logo-container { display: flex; align-items: center; gap: 16px; }
+        .logo-img {
+            height: 52px; width: auto; border-radius: 12px;
+            transition: var(--transicao-padrao);
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
+        }
+        .logo-img:hover {
+            transform: scale(1.04) rotate(-1deg);
+            filter: drop-shadow(0 4px 16px rgba(232, 63, 111, 0.25));
+        }
+        .logo-text {
+            font-family: var(--fonte-titulos);
+            font-size: 1.5rem; font-weight: 700; color: var(--preto);
+            letter-spacing: -0.5px;
+        }
+        .logo-text a { color: var(--preto); text-decoration: none; }
+        .logo-text a:hover { color: var(--rosa); text-decoration: none; }
+
+        .nav-links {
+            display: flex; gap: 24px; list-style: none;
+            align-items: center; flex-wrap: wrap;
+        }
+        .nav-links a {
+            text-decoration: none; color: var(--texto-corpo);
+            font-weight: 500; font-size: 0.9rem; padding: 4px 0;
+            border-bottom: 2px solid transparent;
+            transition: var(--transicao-padrao); position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -2px; left: 0;
+            width: 0; height: 2px; background: var(--rosa);
+            transition: var(--transicao-padrao);
+        }
+        .nav-links a:hover::after, .nav-links a:focus-visible::after { width: 100%; }
+        .nav-links a:hover, .nav-links a:focus-visible { color: var(--rosa); text-decoration: none; }
+        .nav-links .active { color: var(--rosa); }
+        .nav-links .active::after { width: 100%; }
+
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--texto-corpo); padding: 4px 8px; }
+
+        /* BREADCRUMB */
+        .breadcrumb {
+            font-size: 0.85rem; padding: 16px 0;
+            color: var(--texto-corpo); opacity: 0.7;
+        }
+        .breadcrumb a { color: var(--azul); }
+        .breadcrumb span { margin: 0 6px; }
+
+        /* CONTEÚDO */
+        .page-content { padding: 60px 0 80px; }
+        .page-content h1 {
+            font-family: var(--fonte-titulos); font-size: 2.8rem;
+            margin-bottom: 8px; color: var(--preto);
+        }
+        .page-content .subtitle {
+            font-size: 1.1rem; color: var(--texto-corpo); opacity: 0.7;
+            margin-bottom: 40px; border-bottom: 1px solid var(--cinza-borda);
+            padding-bottom: 20px;
+        }
+        .page-content h2 {
+            font-family: var(--fonte-titulos); font-size: 1.8rem;
+            margin-top: 40px; margin-bottom: 16px; color: var(--preto);
+        }
+
+        .filtros {
+            display: flex; flex-wrap: wrap; gap: 12px;
+            margin-bottom: 32px;
+        }
+        .filtros button {
+            padding: 8px 20px; border: 2px solid var(--cinza-borda);
+            border-radius: 30px; background: var(--branco);
+            cursor: pointer; font-family: var(--fonte-principal);
+            font-size: 0.85rem; font-weight: 500;
+            transition: var(--transicao-padrao);
+            color: var(--texto-corpo);
+        }
+        .filtros button:hover,
+        .filtros button.active {
+            background: var(--rosa); color: var(--branco);
+            border-color: var(--rosa);
+        }
+
+        .artigos-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 32px;
+        }
+        .artigo-card {
+            background: var(--branco); padding: 28px;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--cinza-borda);
+            box-shadow: var(--sombra-suave);
+            transition: var(--transicao-padrao);
+            display: flex; flex-direction: column;
+        }
+        .artigo-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--rosa);
+            box-shadow: var(--sombra-media);
+        }
+        .artigo-card .meta {
+            font-size: 0.75rem; color: var(--verde);
+            font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.5px; display: inline-block;
+            background: var(--cinza-claro); padding: 2px 14px;
+            border-radius: 20px; margin-bottom: 12px;
+            align-self: flex-start;
+        }
+        .artigo-card h3 {
+            font-family: var(--fonte-titulos); font-size: 1.3rem;
+            margin-bottom: 8px; color: var(--preto);
+        }
+        .artigo-card .autores {
+            font-size: 0.9rem; opacity: 0.7; margin-bottom: 12px;
+        }
+        .artigo-card p { flex: 1; margin-bottom: 12px; }
+        .artigo-card .card-link {
+            font-weight: 600; color: var(--azul);
+            align-self: flex-start;
+        }
+        .artigo-card .card-link:hover { color: var(--rosa); }
+
+        .btn-voltar {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--azul); color: var(--branco);
+            padding: 10px 24px; border-radius: 30px;
+            font-weight: 600; font-size: 0.9rem;
+            transition: var(--transicao-padrao); margin-top: 24px;
+        }
+        .btn-voltar:hover {
+            background: var(--rosa); color: var(--branco);
+            transform: translateY(-2px); text-decoration: none;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1a2a36; color: #cddfe7;
+            padding: 48px 0 24px; margin-top: 40px;
+        }
+        [data-theme="dark"] footer { background: #0d1b2a; }
+        .footer-grid {
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px; margin-bottom: 32px;
+        }
+        .footer-grid h4 {
+            color: var(--branco); font-family: var(--fonte-titulos);
+            font-size: 1.2rem; margin-bottom: 16px;
+        }
+        .footer-grid ul { list-style: none; }
+        .footer-grid ul li { margin-bottom: 8px; }
+        .footer-grid ul a {
+            color: #cddfe7; text-decoration: none; font-size: 0.9rem;
+            transition: var(--transicao-padrao);
+        }
+        .footer-grid ul a:hover, .footer-grid ul a:focus-visible {
+            color: var(--amarelo); text-decoration: underline;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            display: flex; justify-content: space-between; flex-wrap: wrap;
+            gap: 12px; font-size: 0.85rem;
+        }
+        .footer-bottom a { color: #cddfe7; transition: var(--transicao-padrao); }
+        .footer-bottom a:hover { color: var(--amarelo); }
+        .footer-logo-small { height: 32px; width: auto; border-radius: 8px; opacity: 0.8; }
+
+        /* TOOLBAR ACESSIBILIDADE */
+        .accessibility-toolbar {
+            position: fixed; bottom: 24px; left: 24px; z-index: 9999;
+            display: flex; flex-direction: column; gap: 8px;
+            background: var(--branco); padding: 12px;
+            border-radius: 20px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+            border: 1px solid var(--cinza-borda);
+            transition: var(--transicao-padrao);
+            max-height: 80vh; overflow-y: auto; max-width: 220px;
+        }
+        .accessibility-toolbar button {
+            background: none; border: none; font-size: 1.2rem;
+            padding: 8px 12px; border-radius: 10px; cursor: pointer;
+            color: var(--texto-corpo); transition: var(--transicao-padrao);
+            display: flex; align-items: center; gap: 10px;
+            font-family: var(--fonte-principal); font-size: 0.9rem;
+            min-width: 44px; min-height: 44px; justify-content: flex-start;
+            width: 100%;
+        }
+        .accessibility-toolbar button:hover,
+        .accessibility-toolbar button:focus-visible {
+            background: var(--cinza-claro); color: var(--rosa);
+        }
+        .toolbar-toggle {
+            background: var(--rosa) !important;
+            color: var(--branco) !important;
+            border-radius: 50% !important;
+            width: 52px !important; height: 52px !important;
+            font-size: 1.8rem !important;
+            justify-content: center !important;
+            box-shadow: 0 4px 16px rgba(232, 63, 111, 0.4);
+            flex-shrink: 0;
+        }
+        .toolbar-toggle:hover { transform: scale(1.05); background: var(--rosa) !important; }
+        .toolbar-content { display: none; flex-direction: column; gap: 2px; }
+        .toolbar-content.open { display: flex; }
+        .toolbar-label {
+            font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.8px; color: var(--texto-corpo); opacity: 0.6;
+            padding: 6px 8px 2px; border-top: 1px solid var(--cinza-borda);
+            margin-top: 4px;
+        }
+        .toolbar-label:first-of-type { border-top: none; margin-top: 0; }
+
+        .vlibras-container {
+            position: fixed; bottom: 24px; right: 24px; z-index: 9998;
+        }
+
+        .dyslexic-font { font-family: 'OpenDyslexic', 'Comic Sans MS', 'Inter', sans-serif !important; }
+        .reduce-motion *,
+        .reduce-motion *::before,
+        .reduce-motion *::after {
+            animation-duration: 0.001s !important;
+            transition-duration: 0.001s !important;
+        }
+
+        @media (max-width: 880px) {
+            .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+            .nav-links {
+                display: none; flex-direction: column; width: 100%;
+                gap: 12px; padding: 16px 0;
+                border-top: 1px solid var(--cinza-borda);
+            }
+            .nav-links.open { display: flex; }
+            .header-inner { position: relative; }
+            .menu-toggle { display: block !important; }
+            .accessibility-toolbar { left: 12px; bottom: 12px; padding: 10px; max-width: 190px; }
+            .accessibility-toolbar button { font-size: 1rem; padding: 6px 10px; min-width: 36px; min-height: 36px; gap: 6px; }
+            .toolbar-toggle { width: 44px !important; height: 44px !important; font-size: 1.4rem !important; }
+            .vlibras-container { bottom: 80px; right: 12px; }
+            .page-content h1 { font-size: 2.2rem; }
+            .artigos-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .page-content { padding: 40px 0 60px; }
+            .logo-text { font-size: 1.1rem; }
+            .logo-img { height: 40px; }
+        }
+        .vlibras-container [vw-access-button] { width: 52px !important; height: 52px !important; }
+    </style>
+</head>
+<body>
+
+    <a class="skip-to-content" href="#main-content">Pular para o conteúdo principal</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="logo-container">
+                <img src="https://fabiowlademir.github.io/teoriadodireito/logo.jpg" alt="Logo do Grupo de Pesquisa Teoria do Direito" class="logo-img" loading="lazy">
+                <div class="logo-text">
+                    <a href="index.html" aria-label="Teoria do Direito - Página inicial">TEORIA DO DIREITO</a>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links" id="navLinks" role="list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html#membros">Membros</a></li>
+                    <li><a href="artigos.html" class="active">Artigos</a></li>
+                    <li><a href="index.html#noticias">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="politica-privacidade.html">Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" aria-label="Migalhas de pão">
+        <nav class="breadcrumb">
+            <a href="index.html">Início</a>
+            <span>/</span>
+            <span>Artigos</span>
+        </nav>
+    </div>
+
+    <main id="main-content" class="page-content">
+        <div class="container">
+            <h1>Produção Acadêmica</h1>
+            <p class="subtitle">Artigos, livros e capítulos publicados pelos pesquisadores do Grupo de Pesquisa Teoria do Direito.</p>
+
+            <div class="filtros" id="filtros">
+                <button class="active" data-filter="todos">Todos</button>
+                <button data-filter="teoria-dos-sistemas">Teoria dos Sistemas</button>
+                <button data-filter="constitucionalismo">Constitucionalismo</button>
+                <button data-filter="hermenêutica">Hermenêutica</button>
+                <button data-filter="sociologia">Sociologia Jurídica</button>
+                <button data-filter="tecnologia">Tecnologia</button>
+                <button data-filter="epistemologia">Epistemologia</button>
+            </div>
+
+            <div class="artigos-grid" id="artigosGrid">
+                <!-- Preenchido via JavaScript -->
+            </div>
+
+            <div style="margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--cinza-borda);">
+                <a href="index.html" class="btn-voltar"><i class="fas fa-arrow-left" aria-hidden="true"></i> Voltar para o início</a>
+                <a href="sobre.html" class="btn-voltar" style="margin-left: 12px; background: var(--verde);"><i class="fas fa-info-circle" aria-hidden="true"></i> Sobre o grupo</a>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Teoria do Direito</h4>
+                    <img src="https://fabiowlademir.github.io/teoriadodireito/logo.jpg" alt="Logo Teoria do Direito" class="footer-logo-small" loading="lazy">
+                    <p style="margin-top: 8px;">Grupo de Pesquisa certificado pelo CNPq · PPGD UNISINOS</p>
+                    <p style="margin-top: 4px; font-size: 0.9rem;">© 2026 Todos os direitos reservados.</p>
+                    <div style="display: flex; gap: 16px; margin-top: 12px;">
+                        <a href="https://www.instagram.com/theoriadodireito/" target="_blank" rel="noopener" style="color: #cddfe7; font-size: 1.4rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@fabiowlademirrs" target="_blank" rel="noopener" style="color: #cddfe7; font-size: 1.4rem;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="index.html#membros">Membros</a></li>
+                        <li><a href="artigos.html">Artigos</a></li>
+                        <li><a href="index.html#noticias">Notícias</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Áreas de Pesquisa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Teoria dos Sistemas</a></li>
+                        <li><a href="sobre.html">Constitucionalismo</a></li>
+                        <li><a href="sobre.html">Hermenêutica</a></li>
+                        <li><a href="sobre.html">Sociologia Jurídica</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="politica-privacidade.html" style="color: var(--amarelo);">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Mapa do Site</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div><span>Desenvolvido em conformidade com <strong>WCAG 2.2</strong>, <strong>eMAG</strong> e <strong>LBI</strong>.</span></div>
+                <div><i class="fas fa-shield-alt" aria-hidden="true" style="color: var(--verde);"></i> LGPD · Dados protegidos</div>
+                <div>
+                    <span style="display: block;">Design & Desenvolvimento: <strong>Fábio Wlademir</strong></span>
+                    <div style="display: flex; gap: 12px; margin-top: 4px; justify-content: flex-end;">
+                        <a href="https://fabiowlademir.github.io/" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fas fa-globe"></i></a>
+                        <a href="https://wa.me/5551998883187" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/fabiowlademir/" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@fabiowlademirrs" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/fabiowlademirrs" target="_blank" rel="noopener" style="color: #cddfe7;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOOLBAR ACESSIBILIDADE -->
+    <div class="accessibility-toolbar" role="toolbar" aria-label="Ferramentas de acessibilidade">
+        <button class="toolbar-toggle" id="toolbarToggle" aria-expanded="false" aria-label="Abrir ferramentas de acessibilidade">♿</button>
+        <div class="toolbar-content" id="toolbarContent">
+            <span class="toolbar-label">Tema</span>
+            <button data-action="theme" data-value="light" aria-label="Modo claro"><i class="fas fa-sun" aria-hidden="true"></i> Claro</button>
+            <button data-action="theme" data-value="dark" aria-label="Modo escuro"><i class="fas fa-moon" aria-hidden="true"></i> Escuro</button>
+            <span class="toolbar-label">Contraste</span>
+            <button data-action="contrast" data-value="normal" aria-label="Contraste normal"><i class="fas fa-adjust" aria-hidden="true"></i> Normal</button>
+            <button data-action="contrast" data-value="high" aria-label="Alto contraste"><i class="fas fa-circle-half-stroke" aria-hidden="true"></i> Alto</button>
+            <span class="toolbar-label">Fonte</span>
+            <button data-action="fontSize" data-value="small" aria-label="Diminuir fonte">A-</button>
+            <button data-action="fontSize" data-value="medium" aria-label="Fonte padrão">A</button>
+            <button data-action="fontSize" data-value="large" aria-label="Aumentar fonte">A+</button>
+            <button data-action="fontSize" data-value="xlarge" aria-label="Fonte extra grande">A++</button>
+            <span class="toolbar-label">Leitura</span>
+            <button data-action="dyslexic" data-value="on" aria-label="Fonte para dislexia"><i class="fas fa-book-open" aria-hidden="true"></i> Dislexia</button>
+            <button data-action="reduceMotion" data-value="on" aria-label="Reduzir animações"><i class="fas fa-person-walking" aria-hidden="true"></i> Reduzir</button>
+            <span class="toolbar-label">Voz</span>
+            <button id="voiceBtn" aria-label="Ativar comando de voz"><i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz</button>
+            <span class="toolbar-label">Áudio</span>
+            <button id="listenBtn" aria-label="Ouvir página"><i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir</button>
+        </div>
+    </div>
+
+    <div class="vlibras-container">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+
+            // ============================================
+            // DADOS DOS ARTIGOS
+            // ============================================
+            const artigosData = [
+                { id: 1, categoria: 'teoria-dos-sistemas', titulo: 'Direito como sistema autopoiético',
+                    autores: 'Leonel Severo Rocha', resumo: 'Análise a partir de Niklas Luhmann sobre a autonomia e fechamento operacional do Direito.',
+                    link: '#' },
+                { id: 2, categoria: 'hermenêutica', titulo: 'Decisão judicial e argumentação sistêmica',
+                    autores: 'Leonel Severo Rocha, Lenio Luiz Streck',
+                    resumo: 'Limites da interpretação na pós-modernidade e o papel do intérprete.', link: '#' },
+                { id: 3, categoria: 'tecnologia', titulo: 'Governança algorítmica e riscos jurídicos',
+                    autores: 'A. Tacca, Leonel Severo Rocha',
+                    resumo: 'Regulação de IA, proteção de dados e os desafios para o Direito.', link: '#' },
+                { id: 4, categoria: 'epistemologia', titulo: 'O realismo jurídico e a virada pragmática',
+                    autores: 'Leonel Severo Rocha', resumo: 'Contribuições contemporâneas para a teoria do Direito.',
+                    link: '#' },
+                { id: 5, categoria: 'constitucionalismo', titulo: 'Constitucionalismo intersistêmico',
+                    autores: 'Leonel Severo Rocha', resumo: 'Interações entre o sistema jurídico e outros sistemas sociais.',
+                    link: '#' },
+                { id: 6, categoria: 'sociologia', titulo: 'Direito e diferenciação social na América Latina',
+                    autores: 'Leonel Severo Rocha', resumo: 'Análise das desigualdades e decisão judicial na América Latina.',
+                    link: '#' },
+                { id: 7, categoria: 'constitucionalismo', titulo: 'A Corte Constitucional Internacional no atual contexto de constitucionalismo social',
+                    autores: 'Leonel Severo Rocha',
+                    resumo: 'Contribuições na construção da democracia contínua no âmbito internacional.', link: '#' },
+                { id: 8, categoria: 'teoria-dos-sistemas', titulo: 'Estado, surveillance e risco: caminhos tortuosos em tempos de relativização da democracia',
+                    autores: 'Leonel Severo Rocha',
+                    resumo: 'Análise crítica sobre vigilância estatal e os impactos na democracia contemporânea.',
+                    link: '#' },
+                { id: 9, categoria: 'sociologia', titulo: 'Sociologia das Constituições: o constitucionalismo na perspectiva sociológica de Chris Thornhill',
+                    autores: 'Leonel Severo Rocha', resumo: 'Uma visão sociológica sobre o papel das constituições nas sociedades modernas.',
+                    link: '#' },
+                { id: 10, categoria: 'hermenêutica', titulo: 'A hermenêutica filosófica e as possibilidades de superação do positivismo pelo (neo)constitucionalismo',
+                    autores: 'Lenio Luiz Streck, Leonel Severo Rocha',
+                    resumo: 'Análise da hermenêutica como ferramenta para superação do positivismo.', link: '#' },
+                { id: 11, categoria: 'tecnologia', titulo: 'Inteligência artificial: reflexos no sistema do direito',
+                    autores: 'A. Tacca, Leonel Severo Rocha',
+                    resumo: 'Impactos da IA no sistema jurídico e desafios regulatórios.', link: '#' },
+                { id: 12, categoria: 'epistemologia', titulo: 'Epistemologia do Direito: revisitando as três matrizes jurídicas',
+                    autores: 'Leonel Severo Rocha', resumo: 'Releitura das matrizes epistemológicas do Direito contemporâneo.',
+                    link: '#' },
+            ];
+
+            // ============================================
+            // RENDERIZAR ARTIGOS
+            // ============================================
+            const artigosGrid = document.getElementById('artigosGrid');
+
+            function renderArtigos(categoria = 'todos') {
+                if (!artigosGrid) return;
+                const filtered = categoria === 'todos' ?
+                    artigosData :
+                    artigosData.filter(a => a.categoria === categoria);
+
+                if (filtered.length === 0) {
+                    artigosGrid.innerHTML = `
+                            <div style="grid-column: 1 / -1; text-align: center; padding: 40px; background: var(--branco); border-radius: var(--border-radius); border: 1px solid var(--cinza-borda);">
+                                <p style="font-size: 1.2rem; opacity: 0.7;">Nenhum artigo encontrado nesta categoria.</p>
+                            </div>
+                        `;
+                    return;
+                }
+
+                artigosGrid.innerHTML = filtered.map(art => `
+                        <div class="artigo-card">
+                            <span class="meta">${art.categoria.replace(/-/g, ' ').toUpperCase()}</span>
+                            <h3>${art.titulo}</h3>
+                            <div class="autores"><i class="fas fa-user" aria-hidden="true"></i> ${art.autores}</div>
+                            <p>${art.resumo}</p>
+                            <a href="${art.link}" class="card-link">Leia mais →</a>
+                        </div>
+                    `).join('');
+            }
+
+            renderArtigos('todos');
+
+            // ============================================
+            // FILTROS
+            // ============================================
+            const filtros = document.querySelectorAll('.filtros button');
+            filtros.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filtros.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    renderArtigos(this.dataset.filter);
+                });
+            });
+
+            // ============================================
+            // MENU MOBILE
+            // ============================================
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', function() {
+                    const isOpen = navLinks.classList.toggle('open');
+                    this.setAttribute('aria-expanded', isOpen);
+                    this.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+                });
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                    });
+                });
+            }
+
+            // ============================================
+            // TOOLBAR ACESSIBILIDADE
+            // ============================================
+            const toolbarToggle = document.getElementById('toolbarToggle');
+            const toolbarContent = document.getElementById('toolbarContent');
+            let toolbarOpen = false;
+            if (toolbarToggle && toolbarContent) {
+                toolbarToggle.addEventListener('click', function() {
+                    toolbarOpen = !toolbarOpen;
+                    toolbarContent.classList.toggle('open', toolbarOpen);
+                    this.setAttribute('aria-expanded', toolbarOpen);
+                    this.textContent = toolbarOpen ? '✕' : '♿';
+                });
+                document.addEventListener('click', function(e) {
+                    const toolbar = document.querySelector('.accessibility-toolbar');
+                    if (toolbar && !toolbar.contains(e.target) && toolbarOpen) {
+                        toolbarOpen = false;
+                        toolbarContent.classList.remove('open');
+                        toolbarToggle.setAttribute('aria-expanded', 'false');
+                        toolbarToggle.textContent = '♿';
+                    }
+                });
+            }
+
+            // Ações
+            const actions = {
+                theme: (v) => { document.documentElement.setAttribute('data-theme', v);
+                    localStorage.setItem('theme', v); },
+                contrast: (v) => { document.documentElement.setAttribute('data-high-contrast', v === 'high' ? 'true' :
+                        'false');
+                    localStorage.setItem('highContrast', v === 'high' ? 'true' : 'false'); },
+                fontSize: (v) => {
+                    const sizes = { small: '0.85rem', medium: '1rem', large: '1.2rem', xlarge: '1.4rem' };
+                    document.documentElement.style.fontSize = sizes[v] || '1rem';
+                    localStorage.setItem('fontSize', v);
+                },
+                dyslexic: (v) => { document.body.classList.toggle('dyslexic-font', v === 'on');
+                    localStorage.setItem('dyslexic', v === 'on' ? 'true' : 'false'); },
+                reduceMotion: (v) => { document.body.classList.toggle('reduce-motion', v === 'on');
+                    localStorage.setItem('reduceMotion', v === 'on' ? 'true' : 'false'); }
+            };
+            document.querySelectorAll('[data-action]').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const action = this.dataset.action;
+                    const value = this.dataset.value;
+                    if (actions[action]) actions[action](value);
+                });
+            });
+
+            // Restaurar preferências
+            function restorePreferences() {
+                const theme = localStorage.getItem('theme');
+                if (theme) document.documentElement.setAttribute('data-theme', theme);
+                const contrast = localStorage.getItem('highContrast');
+                if (contrast) document.documentElement.setAttribute('data-high-contrast', contrast);
+                const fontSize = localStorage.getItem('fontSize');
+                if (fontSize) {
+                    const sizes = { small: '0.85rem', medium: '1rem', large: '1.2rem', xlarge: '1.4rem' };
+                    document.documentElement.style.fontSize = sizes[fontSize] || '1rem';
+                }
+                if (localStorage.getItem('dyslexic') === 'true') document.body.classList.add('dyslexic-font');
+                if (localStorage.getItem('reduceMotion') === 'true') document.body.classList.add('reduce-motion');
+            }
+            restorePreferences();
+
+            // VLibras
+            const vlibrasScript = document.createElement('script');
+            vlibrasScript.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
+            vlibrasScript.async = true;
+            vlibrasScript.onload = function() { new window.VLibras.Widget('https://vlibras.gov.br/app'); };
+            document.body.appendChild(vlibrasScript);
+
+            // Voice Command
+            const voiceBtn = document.getElementById('voiceBtn');
+            let isListening = false;
+            let recognition = null;
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                recognition = new SpeechRecognition();
+                recognition.lang = 'pt-BR';
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                document.addEventListener('keydown', function(e) {
+                    if (e.ctrlKey && e.shiftKey && e.key === 'V') { e.preventDefault();
+                        toggleVoiceRecognition(); }
+                });
+                if (voiceBtn) voiceBtn.addEventListener('click', toggleVoiceRecognition);
+
+                function toggleVoiceRecognition() {
+                    if (!recognition) return;
+                    if (isListening) { recognition.stop();
+                        isListening = false; if (voiceBtn) { voiceBtn.innerHTML =
+                                '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                            voiceBtn.style.background = 'transparent';
+                            voiceBtn.style.color = ''; } return; }
+                    try {
+                        recognition.start();
+                        isListening = true;
+                        if (voiceBtn) { voiceBtn.innerHTML =
+                                '<i class="fas fa-microphone-slash" aria-hidden="true"></i> Parar';
+                            voiceBtn.style.background = 'var(--rosa)';
+                            voiceBtn.style.color = 'white'; }
+                    } catch (e) { console.warn(e);
+                        isListening = false; }
+                }
+                recognition.onresult = function(event) {
+                    const command = event.results[0][0].transcript.toLowerCase().trim();
+                    const commands = {
+                        'início': () => window.location.href = 'index.html',
+                        'sobre': () => window.location.href = 'sobre.html',
+                        'artigos': () => window.location.href = 'artigos.html',
+                        'contato': () => window.location.href = 'contato.html',
+                        'privacidade': () => window.location.href = 'politica-privacidade.html',
+                        'modo escuro': () => actions.theme('dark'),
+                        'modo claro': () => actions.theme('light'),
+                        'aumentar fonte': () => actions.fontSize('large'),
+                        'diminuir fonte': () => actions.fontSize('small'),
+                    };
+                    for (const [key, action] of Object.entries(commands)) {
+                        if (command.includes(key)) {
+                            action();
+                            recognition.stop();
+                            isListening = false;
+                            if (voiceBtn) { voiceBtn.innerHTML =
+                                    '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                                voiceBtn.style.background = 'transparent';
+                                voiceBtn.style.color = ''; }
+                            break;
+                        }
+                    }
+                };
+                recognition.onerror = function() { isListening = false; if (voiceBtn) { voiceBtn.innerHTML =
+                            '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                        voiceBtn.style.background = 'transparent';
+                        voiceBtn.style.color = ''; } };
+                recognition.onend = function() { isListening = false; if (voiceBtn) { voiceBtn.innerHTML =
+                            '<i class="fas fa-microphone" aria-hidden="true"></i> Comando Voz';
+                        voiceBtn.style.background = 'transparent';
+                        voiceBtn.style.color = ''; } };
+            } else { if (voiceBtn) { voiceBtn.style.opacity = '0.5';
+                    voiceBtn.title = 'Reconhecimento de voz não suportado'; } }
+
+            // Ouvir página
+            const listenBtn = document.getElementById('listenBtn');
+            let isSpeaking = false;
+            let speechSynth = window.speechSynthesis;
+            if (listenBtn && speechSynth) {
+                listenBtn.addEventListener('click', function() {
+                    if (isSpeaking) { speechSynth.cancel();
+                        isSpeaking = false; listenBtn.innerHTML =
+                            '<i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir';
+                        listenBtn.style.background = 'transparent';
+                        listenBtn.style.color = ''; return; }
+                    const mainContent = document.getElementById('main-content');
+                    const text = mainContent ? mainContent.innerText : document.body.innerText;
+                    const cleanText = text.replace(/\s+/g, ' ').replace(/©.*$/s, '').trim();
+                    const utterance = new SpeechSynthesisUtterance(cleanText);
+                    utterance.lang = 'pt-BR';
+                    utterance.rate = 0.9;
+                    utterance.pitch = 1;
+                    utterance.onend = function() { isSpeaking = false;
+                        listenBtn.innerHTML = '<i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir';
+                        listenBtn.style.background = 'transparent';
+                        listenBtn.style.color = ''; };
+                    utterance.onerror = function() { isSpeaking = false;
+                        listenBtn.innerHTML = '<i class="fas fa-volume-up" aria-hidden="true"></i> Ouvir';
+                        listenBtn.style.background = 'transparent';
+                        listenBtn.style.color = ''; };
+                    speechSynth.speak(utterance);
+                    isSpeaking = true;
+                    listenBtn.innerHTML = '<i class="fas fa-stop" aria-hidden="true"></i> Parar';
+                    listenBtn.style.background = 'var(--rosa)';
+                    listenBtn.style.color = 'white';
+                });
+            }
+
+            console.log('📚 Página de Artigos carregada com sucesso!');
+        })();
+    </script>
+</body>
+</html>
