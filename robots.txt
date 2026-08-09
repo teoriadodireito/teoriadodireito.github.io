@@ -1,6 +1,6 @@
 # ============================================
 # ROBOTS.TXT - Teoria do Direito
-# Instruções para motores de busca
+# Domínio: https://teoriadodireito.github.io
 # ============================================
 
 User-agent: *
