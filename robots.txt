@@ -1,0 +1,66 @@
+# ============================================
+# ROBOTS.TXT - Teoria do Direito
+# Instruções para motores de busca
+# ============================================
+
+User-agent: *
+Allow: /
+
+# Permitir acesso a todas as páginas principais
+Allow: /$
+Allow: /index.html
+Allow: /sobre.html
+Allow: /artigos.html
+Allow: /livraria.html
+Allow: /contato.html
+Allow: /politica-privacidade.html
+Allow: /sitemap.html
+Allow: /sitemap.xml
+
+# Bloquear pastas desnecessárias (se existirem)
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Disallow: /fonts/
+Disallow: /vendors/
+
+# Googlebot (otimizado para Google)
+User-agent: Googlebot
+Allow: /
+Allow: /index.html
+Allow: /sobre.html
+Allow: /artigos.html
+Allow: /livraria.html
+Allow: /contato.html
+Allow: /politica-privacidade.html
+Allow: /sitemap.html
+Allow: /sitemap.xml
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Allow: /index.html
+Allow: /sobre.html
+Allow: /artigos.html
+Allow: /livraria.html
+Allow: /contato.html
+Allow: /politica-privacidade.html
+Allow: /sitemap.html
+Allow: /sitemap.xml
+
+# Sitemap
+Sitemap: https://teoriadodireito.github.io/sitemap.xml
+
+# Crawl delay (para não sobrecarregar o servidor)
+Crawl-delay: 1
+
+# Host (indica o domínio principal)
+Host: https://teoriadodireito.github.io
+
+# ============================================
+# Fim do robots.txt
+# ============================================
