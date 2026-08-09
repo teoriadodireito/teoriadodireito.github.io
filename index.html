@@ -12,16 +12,16 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fabiowlademir.github.io/teoriadodireito/">
+    <meta property="og:url" content="https://teoriadodireito.github.io/">
     <meta property="og:title" content="Teoria do Direito | Grupo de Pesquisa CNPq – UNISINOS">
     <meta property="og:description" content="Grupo de Pesquisa certificado pelo CNPq. Liderado pelo Prof. Dr. Leonel Severo Rocha. Pesquisa crítica e inovação em Teoria do Direito.">
-    <meta property="og:image" content="https://fabiowlademir.github.io/teoriadodireito/logo.jpg">
+    <meta property="og:image" content="https://teoriadodireito.github.io/logo.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Teoria do Direito | Grupo de Pesquisa CNPq – UNISINOS">
     <meta name="twitter:description" content="Grupo de Pesquisa certificado pelo CNPq. Liderado pelo Prof. Dr. Leonel Severo Rocha.">
-    <meta name="twitter:image" content="https://fabiowlademir.github.io/teoriadodireito/logo.jpg">
+    <meta name="twitter:image" content="https://teoriadodireito.github.io/logo.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
         "name": "Grupo de Pesquisa Teoria do Direito",
         "alternateName": "Teoria do Direito CNPq",
         "description": "Grupo de pesquisa certificado pelo CNPq, sediado no PPGD da UNISINOS, liderado pelo Prof. Dr. Leonel Severo Rocha.",
-        "url": "https://fabiowlademir.github.io/teoriadodireito/",
+        "url": "https://teoriadodireito.github.io/",
         "email": "GrupodepesquisaTeoriadoDireito@gmail.com",
         "telephone": "+555135908148",
         "address": {
@@ -599,7 +599,7 @@
         }
 
         /* ============================================
-                   EVENTO 25 ANOS
+                   EVENTO 25 ANOS (dentro do card)
                    ============================================ */
         .evento-destaque {
             background: linear-gradient(135deg, var(--amarelo), #f6ad55);
@@ -635,6 +635,226 @@
 
         .evento-destaque a:hover {
             color: var(--rosa);
+        }
+
+        /* ============================================
+                   BANNER DO LANÇAMENTO (Destaque especial - NOVO)
+                   ============================================ */
+        .lancamento-banner {
+            background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            border-radius: var(--border-radius);
+            padding: 48px;
+            margin: 32px 0 48px;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 48px;
+            align-items: center;
+            color: var(--branco);
+            box-shadow: 0 0 0 3px var(--amarelo), var(--sombra-media);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(249, 199, 79, 0.3);
+        }
+
+        .lancamento-banner::before {
+            content: '🎉 25 ANOS';
+            position: absolute;
+            top: -20px;
+            right: -40px;
+            font-size: 6rem;
+            opacity: 0.05;
+            transform: rotate(15deg);
+            font-weight: 900;
+            letter-spacing: 10px;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .lancamento-banner::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(249, 199, 79, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .lancamento-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .lancamento-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #f6ad55, #ed8936);
+            color: var(--preto);
+            padding: 6px 20px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+
+        .lancamento-banner h2 {
+            font-family: var(--fonte-titulos);
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+            color: var(--branco);
+            line-height: 1.2;
+        }
+
+        .lancamento-banner h2 br {
+            display: block;
+        }
+
+        .lancamento-info {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-bottom: 4px;
+        }
+
+        .lancamento-info i {
+            color: var(--amarelo);
+            margin-right: 6px;
+        }
+
+        .lancamento-descricao {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin: 16px 0;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border-left: 3px solid var(--amarelo);
+        }
+
+        .lancamento-prefacio {
+            font-size: 0.95rem;
+            font-style: italic;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            margin: 12px 0 20px;
+            position: relative;
+        }
+
+        .lancamento-prefacio i {
+            color: var(--amarelo);
+            margin-right: 8px;
+            opacity: 0.6;
+        }
+
+        .lancamento-prefacio span {
+            opacity: 0.9;
+        }
+
+        .lancamento-prefacio strong {
+            display: block;
+            margin-top: 6px;
+            font-style: normal;
+            color: var(--amarelo);
+        }
+
+        .lancamento-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .btn-lancamento {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--amarelo);
+            color: var(--preto);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: var(--transicao-padrao);
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-lancamento:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(249, 199, 79, 0.3);
+            color: var(--preto);
+            text-decoration: none;
+        }
+
+        .btn-lancamento i {
+            transition: var(--transicao-padrao);
+        }
+
+        .btn-lancamento:hover i {
+            transform: translateX(4px);
+        }
+
+        .btn-lancamento-secundario {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--branco);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transicao-padrao);
+            text-decoration: none;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+        }
+
+        .btn-lancamento-secundario:hover {
+            background: var(--branco);
+            color: var(--preto);
+            transform: translateY(-3px);
+            text-decoration: none;
+            border-color: var(--branco);
+        }
+
+        /* Imagem do livro no banner */
+        .lancamento-imagem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .lancamento-imagem img {
+            max-height: 320px;
+            width: auto;
+            border-radius: 12px;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+            transition: var(--transicao-padrao);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .lancamento-imagem img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 16px 60px rgba(0, 0, 0, 0.6);
+        }
+
+        .lancamento-imagem-badge {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.7rem;
+            opacity: 0.5;
+            letter-spacing: 0.5px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 4px 16px;
+            border-radius: 20px;
         }
 
         /* ============================================
@@ -1013,6 +1233,20 @@
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
+            .lancamento-banner {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 32px 24px;
+            }
+            .lancamento-banner h2 br {
+                display: none;
+            }
+            .lancamento-buttons {
+                justify-content: center;
+            }
+            .lancamento-imagem img {
+                max-height: 250px;
+            }
         }
 
         @media (max-width: 880px) {
@@ -1083,6 +1317,22 @@
                 bottom: 80px;
                 right: 12px;
             }
+
+            .lancamento-banner h2 {
+                font-size: 1.8rem;
+            }
+            .lancamento-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn-lancamento,
+            .btn-lancamento-secundario {
+                width: 100%;
+                justify-content: center;
+            }
+            .lancamento-imagem img {
+                max-height: 200px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1107,6 +1357,17 @@
             .membros-grid {
                 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
                 gap: 12px;
+            }
+            .lancamento-banner {
+                padding: 24px 16px;
+            }
+            .lancamento-banner h2 {
+                font-size: 1.4rem;
+            }
+            .lancamento-descricao,
+            .lancamento-prefacio {
+                font-size: 0.85rem;
+                padding: 12px 16px;
             }
         }
 
@@ -1284,7 +1545,7 @@
     <header class="site-header" role="banner">
         <div class="container header-inner">
             <div class="logo-container">
-                <img src="https://fabiowlademir.github.io/teoriadodireito/logo.jpg" alt="Logo do Grupo de Pesquisa Teoria do Direito" class="logo-img" loading="lazy">
+                <img src="https://teoriadodireito.github.io/logo.jpg" alt="Logo do Grupo de Pesquisa Teoria do Direito" class="logo-img" loading="lazy">
                 <div class="logo-text">
                     <a href="index.html" aria-label="Teoria do Direito - Página inicial">TEORIA DO DIREITO</a>
                 </div>
@@ -1347,6 +1608,57 @@
                 </div>
             </div>
         </section>
+
+        <!-- ===== BANNER DO LANÇAMENTO (Destaque especial - NOVO) ===== -->
+        <div class="container">
+            <div class="lancamento-banner">
+                <div class="lancamento-content">
+                    <span class="lancamento-badge">
+                        <i class="fas fa-gift" aria-hidden="true"></i> 
+                        LANÇAMENTO EXCLUSIVO - 25 ANOS DO GRUPO
+                    </span>
+                    <h2>Teoria do Direito: <br>Introdução Sistêmica</h2>
+                    <p class="lancamento-info">
+                        <i class="fas fa-calendar-alt" aria-hidden="true"></i> 
+                        <strong>Lançamento:</strong> 22 de setembro de 2026
+                    </p>
+                    <p class="lancamento-info">
+                        <i class="fas fa-users" aria-hidden="true"></i> 
+                        <strong>Autores:</strong> Leonel Severo Rocha · Bernardo Leandro Carvalho Costa
+                    </p>
+                    <p class="lancamento-descricao">
+                        Uma introdução sistêmica à Teoria do Direito, abordando os fundamentos 
+                        da teoria dos sistemas sociais aplicada ao direito contemporâneo.
+                    </p>
+                    <div class="lancamento-prefacio">
+                        <i class="fas fa-quote-left" aria-hidden="true"></i>
+                        <span>
+                            "O trabalho de Leonel e Bernardo vai na contramão disso. 
+                            Ele exige que a teoria seja levada a sério. E levar a teoria a sério 
+                            significa impedir que ela seja convertida em ornamento."
+                        </span>
+                        <strong>— Lenio Streck</strong>
+                    </div>
+                    <div class="lancamento-buttons">
+                        <a href="https://eventos.unisinos.br/encontro25anosteoriadireito/" target="_blank" rel="noopener" class="btn-lancamento">
+                            <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                            Saiba mais sobre o evento
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="livraria.html" class="btn-lancamento-secundario">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                            Ver na livraria
+                        </a>
+                    </div>
+                </div>
+                <div class="lancamento-imagem">
+                    <img src="https://teoriadodireito.github.io/imagens/Capa_introducao_sistemica.jpg" 
+                         alt="Capa do livro Teoria do Direito: Introdução Sistêmica" 
+                         loading="lazy">
+                    <span class="lancamento-imagem-badge">📖 Capa do Livro</span>
+                </div>
+            </div>
+        </div>
 
         <!-- ===== SOBRE ===== -->
         <section id="sobre" class="section" aria-labelledby="sobre-title">
@@ -1488,7 +1800,7 @@
             <div class="footer-grid">
                 <div>
                     <h4>Teoria do Direito</h4>
-                    <img src="https://fabiowlademir.github.io/teoriadodireito/logo.jpg" alt="Logo Teoria do Direito" class="footer-logo-small" loading="lazy">
+                    <img src="https://teoriadodireito.github.io/logo.jpg" alt="Logo Teoria do Direito" class="footer-logo-small" loading="lazy">
                     <p style="margin-top: 8px;">Grupo de Pesquisa certificado pelo CNPq · PPGD UNISINOS</p>
                     <p style="margin-top: 4px; font-size: 0.9rem;">© 2026 Todos os direitos reservados.</p>
                     <div class="social-links">
@@ -1971,6 +2283,9 @@
                         'livraria': () => window.location.href = 'livraria.html',
                         'contato': () => window.location.href = 'contato.html',
                         'privacidade': () => window.location.href = 'politica-privacidade.html',
+                        'lançamento': () => {
+                            document.querySelector('.lancamento-banner')?.scrollIntoView({ behavior: 'smooth' });
+                        },
                         'modo escuro': () => actions.theme('dark'),
                         'modo claro': () => actions.theme('light'),
                         'aumentar fonte': () => actions.fontSize('large'),
@@ -2091,8 +2406,9 @@
             }
 
             console.log('🚀 Portal Teoria do Direito carregado com sucesso!');
-            console.log('📌 Acesse: dgp.cnpq.br/teoriadodireito');
+            console.log('📌 Acesse: teoriadodireito.github.io');
             console.log('📸 Instagram: @theoriadodireito');
+            console.log('📖 Lançamento: Teoria do Direito: Introdução Sistêmica - 22/09/2026');
 
         })();
     </script>
